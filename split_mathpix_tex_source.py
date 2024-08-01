@@ -2,20 +2,42 @@ import re
 
 
 def split_mathpix_tex_source(tex_source):
+    pattern = r'\\begin\{verbatim\}|\\end\{verbatim\}'
+    remove_words = re.sub(pattern, '', tex_source)
+    return split_tex_source(remove_words)
+
+
+def split_tex_source(tex_source):
     contents_split = []
     # 문제 또는 해설의 시작을 표시하는 pattern 정의
-    pattern = r'\\\\\n\d{1,2}\s*[\.:]|\n\n\d{1,2}\s*[\.:]|\\item'
+    pattern = (r'\\\\\n\d{1,2}\s*[\.:\)]|\n\n\d{1,2}\s*[\.:\)]|\\section\*\{\d{1,2}\.|\\section\*\{\d{1,2}\)')
+    enumerate_pattern = r'\\begin{enumerate}.*?\\end{enumerate}'
+    item_pattern = r'\\item'
     # tex_source에서 문제 또는 해설의 시작을 표시하는 pattern 위치 파악
     matches_point = []
     matches = re.finditer(pattern, tex_source, re.DOTALL)
     for match in matches:
         matches_point.append([match.start(), match.end()])
+    # tex_source에서 문제 또는 해설의 시작이 \item인 경우의 위치 파악
+    for enum_match in re.finditer(enumerate_pattern, tex_source, re.DOTALL):
+        enum_start = enum_match.start()
+        enum_text = enum_match.group()
+        # enumerate 환경 내의 \item 찾기
+        for item_match in re.finditer(item_pattern, enum_text):
+            # span 값 계산 (전체 문서 기준)
+            start = enum_start + item_match.start()
+            end = enum_start + item_match.end()
+            matches_point.append([start, end])
+    # matches_point 정렬
+    matches_point.sort()
     # 파악한 위치로 분리 저장
     for i in range(len(matches_point) - 1):
         contents_split.append(tex_source[matches_point[i][1]:matches_point[i + 1][0]])
     contents_split.append(tex_source[matches_point[-1][1]:])
 
     for i in range(len(matches_point)):
+        # 첫 줄에서 닫힌 중괄호가 하나 더 많은 항목 수정
+        contents_split[i] = remove_extra_closing_brace(contents_split[i])
         # \section*{section_title}부터 끝까지 삭제
         contents_split[i] = remove_section_to_end(contents_split[i])
         # 지정된 단어를 포함하는 라인 삭제
@@ -25,6 +47,22 @@ def split_mathpix_tex_source(tex_source):
     # 한글 문자 and 문자($)가 없는 항목 삭제
     contents_split = remove_non_korean_items(filtered_contents_split)
     return contents_split
+
+# 첫 줄에서 닫힌 중괄호가 하나 더 많은 항목 수정
+
+
+def remove_extra_closing_brace(text):
+    lines = text.split('\n', 1)
+    first_line = lines[0]
+
+    open_count = first_line.count('{')
+    close_count = first_line.count('}')
+
+    if close_count == open_count + 1:
+        # 마지막 중괄호 제거
+        first_line = first_line.rsplit('}', 1)[0]
+    # 수정된 첫 줄과 나머지 연결 후 리턴
+    return first_line + ('\n' + lines[1] if len(lines) > 1 else '')
 
 
 # \section*{section_title}부터 끝까지 삭제
