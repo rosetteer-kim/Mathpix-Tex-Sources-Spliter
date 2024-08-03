@@ -134,5 +134,5 @@ def remove_short_items(text_list: list[str], min_length=18):
 # 한글 문자 and 문자(\(,\))가 없는 항목 삭제
 def remove_non_korean_items(text_list: list[str]):
     # 한글 문자 또는 \( 또는 \)를 포함하는 항목만 선택
-    korean_pattern = re.compile('[가-힣]|\(|\)')
+    korean_pattern = re.compile('[가-힣]|\\(|\\)')
     return [item for item in text_list if korean_pattern.search(item)]
