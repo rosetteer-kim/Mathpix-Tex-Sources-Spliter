@@ -3,6 +3,9 @@
 #   1. r'\\\\\n\d{1,2}\s*[\.:\)]|\n\n\d{1,2}\s*[\.:\)]|\\section\*\{\d{1,2}\.|\\section\*\{\d{1,2}\)'
 #   2. enumerate 환경 내부의 \item
 # (marker)들의 시작 위치와 끝 위치를 찾아서 (content)들을 추출
+#
+#
+#
 
 import re
 from collections.abc import Callable
