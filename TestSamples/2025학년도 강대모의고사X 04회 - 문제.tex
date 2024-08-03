@@ -1,0 +1,655 @@
+% This LaTeX document needs to be compiled with XeLaTeX.
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\graphicspath{ {./images/} }
+\usepackage[fallback]{xeCJK}
+\usepackage{polyglossia}
+\usepackage{fontspec}
+\setCJKmainfont{Noto Serif CJK KR}
+
+\setmainlanguage{english}
+\setmainfont{CMU Serif}
+
+%New command to display footnote whose markers will always be hidden
+\let\svthefootnote\thefootnote
+\newcommand\blfootnotetext[1]{%
+  \let\thefootnote\relax\footnote{#1}%
+  \addtocounter{footnote}{-1}%
+  \let\thefootnote\svthefootnote%
+}
+
+%Overriding the \footnotetext command to hide the marker if its value is `0`
+\let\svfootnotetext\footnotetext
+\renewcommand\footnotetext[2][?]{%
+  \if\relax#1\relax%
+    \ifnum\value{footnote}=0\blfootnotetext{#2}\else\svfootnotetext{#2}\fi%
+  \else%
+    \if?#1\ifnum\value{footnote}=0\blfootnotetext{#2}\else\svfootnotetext{#2}\fi%
+    \else\svfootnotetext[#1]{#2}\fi%
+  \fi
+}
+
+\begin{document}
+5 지선다형
+
+\begin{enumerate}
+  \item \(\left(\frac{3^{\sqrt{2}}}{3}\right)^{\sqrt{2}} \times 3^{\sqrt{2}}\) 의 값은? [2점]
+\end{enumerate}
+
+\(\begin{array}{lllll}\text { (1) } \frac{1}{9} & \text { (2) } \frac{1}{3} & \text { (3) } 1 & \text { (4) } 3 & \text { (5) } 9\end{array}\)
+
+\begin{enumerate}
+  \setcounter{enumi}{1}
+  \item 함수 \(f(x)=x^{4}+7\) 에 대하여 \(\lim _{x \rightarrow 2} \frac{f(x)-f(2)}{2 x-4}\) 의 값은? [2점]\\
+(1) 8\\
+(2) 10\\
+(3) 12\\
+(4) 14\\
+(5) 16
+
+  \item \(\sin \theta<0\) 이고 \(\cos \theta=\frac{2}{3}\) 일 때, \(\tan \theta\) 의 값은? [3점]\\
+(1) \(-\frac{\sqrt{5}}{2}\)\\
+(2) \(-\frac{\sqrt{5}}{4}\)\\
+(3) 0\\
+(4) \(\frac{\sqrt{5}}{4}\)\\
+(5) \(\frac{\sqrt{5}}{2}\)
+
+  \item 함수
+
+\end{enumerate}
+
+\[
+f(x)= \begin{cases}2 x-a & (x \leq a) \\ x^{2}-3 x+4 & (x>a)\end{cases}
+\]
+
+가 실수 전체의 집합에서 연속일 때, 상수 \(a\) 의 값은? [3점]\\
+(1) 1\\
+(2) 2\\
+(3) 3\\
+(4) 4\\
+(5) 5
+
+\begin{enumerate}
+  \setcounter{enumi}{4}
+  \item 첫째항이 2 인 등비수열 \(\left\{a_{n}\right\}\) 의 첫째항부터 제 \(n\) 항까지의 합을 \(S_{n}\) 이라 하자.
+\end{enumerate}
+
+\[
+a_{2}<0, \quad S_{4}-S_{2}=2 a_{2}
+\]
+
+일 때, \(S_{5}\) 의 값은? [3점]
+
+\(\begin{array}{lllll}\text { (1) } 16 & \text { (2) } 18 & \text { (3) } 20 & \text { (4) } 22 & \text { (5) } 24\end{array}\)\\
+7. 다항함수 \(f(x)\) 가 모든 실수 \(x\) 에 대하여
+
+\[
+\int_{2}^{x}\{f(x)-f(t)\} d t=x^{3}-12 x+16
+\]
+
+을 만족시킬 때, \(f^{\prime}(2)\) 의 값은? [3점]
+
+\(\begin{array}{lllll}\text { (1) } 8 & \text { (2) } 10 & \text { (3) } 12 & \text { (4) } 14 & \text { (5) } 16\end{array}\)\\
+6. 함수 \(f(x)=3 x^{3}+a x^{2}-\left(a^{2}-10\right) x+2\) 가 일대일대응이 되도록 하는 실수 \(a\) 의 최댓값과 최솟값의 차는? [3점]\\
+(1) 2\\
+(2) 4\\
+(3) 6\\
+(4) 8\\
+(5) 10
+
+\begin{enumerate}
+  \setcounter{enumi}{7}
+  \item 등차수열 \(\left\{a_{n}\right\}\) 에 대하여 수열 \(\left\{b_{n}\right\}\) 을
+\end{enumerate}
+
+\[
+b_{n}=\left(a_{n+2}\right)^{2}-\left(a_{n}\right)^{2} \quad(n \geq 1)
+\]
+
+이라 하자. \(a_{4}=1, \sum_{k=1}^{5} b_{k}=15\) 일 때, \(b_{7}\) 의 값은? [3점]\\
+(1) 4\\
+(2) 6\\
+(3) 8\\
+(4) 10\\
+(5) 12
+
+\begin{enumerate}
+  \setcounter{enumi}{9}
+  \item 다음 조건을 만족시키는 모든 자연수 \(k\) 의 값의 합은? [4점]
+\end{enumerate}
+
+2 이상의 자연수 \(n\) 에 대하여 \(k-3 n\) 의 \(n\) 제곱근 중에서 실수인 것의 개수를 \(g(n)\) 이라 할 때,
+
+\[
+g(2)+g(3)+g(4)+\cdots+g(10)=8
+\]
+
+이다.\\
+(1) 65\\
+(2) 70\\
+(3) 75\\
+(4) 80\\
+(5) 85
+
+\begin{enumerate}
+  \setcounter{enumi}{8}
+  \item 시각 \(t=0\) 일 때 동시에 원점을 출발하여 수직선 위를 움직이는 두 점 \(\mathrm{P}, \mathrm{Q}\) 의 시각 \(t(t \geq 0)\) 에서의 속도가 각각
+\end{enumerate}
+
+\[
+v_{1}(t)=t^{2}-3 t, \quad v_{2}(t)=t-3
+\]
+
+이다. 출발한 후 두 점 \(\mathrm{P}, \mathrm{Q}\) 가 시각 \(t=k(k>0)\) 에서 만날 때, 시각 \(t=0\) 에서 시각 \(t=2 k\) 까지 점 P 가 움직인 거리는? [4점]\\
+(1) 21\\
+(2) 24\\
+(3) 27\\
+(4) 30\\
+(5) 33
+
+\begin{enumerate}
+  \setcounter{enumi}{10}
+  \item 삼차함수 \(f(x)\) 에 대하여 곡선 \(y=f(x)\) 와 원 \(x^{2}+y^{2}=25\) 가 두 점 \(\mathrm{A}(0,5), \mathrm{B}(4,3)\) 에서 만난다. 곡선 \(y=f(x)\) 위의 점 A 에서의 접선과 곡선 \(y=f(x)\) 위의 점 B 에서의 접선이 모두 원 \(x^{2}+y^{2}=25\) 에 접할 때, \(f(-6)\) 의 값은? [4점]\\
+(1) \(\frac{31}{4}\)\\
+(2) 8\\
+(3) \(\frac{33}{4}\)\\
+(4) \(\frac{17}{2}\)\\
+(5) \(\frac{35}{4}\)
+\end{enumerate}
+
+\begin{center}
+\includegraphics[max width=\textwidth]{2024_08_03_7612aa15dcbb07d9eb66g-04}
+\end{center}
+
+\begin{enumerate}
+  \setcounter{enumi}{11}
+  \item 함수 \(f(x)=a \tan \frac{\pi x}{2}\) 가 다음 조건을 만족시킬 때, 양수 \(a\) 의 값은? [4점]
+\end{enumerate}
+
+\[
+\begin{aligned}
+& \text { 열린구간 }(-1,5) \text { 에서 방정식 } \\
+& \qquad\{f(x)+x-1\} \times\{f(x)+x-2\}=0
+\end{aligned}
+\]
+
+의 모든 실근의 합은 \(\frac{23}{2}\) 이다.\\
+(1) \(\frac{7}{4}\)\\
+(2) 2\\
+(3) \(\frac{9}{4}\)\\
+(4) \(\frac{5}{2}\)\\
+(5) \(\frac{11}{4}\)
+
+\begin{enumerate}
+  \setcounter{enumi}{12}
+  \item 그림과 같이 두 상수 \(a(a>1), b\) 에 대하여
+\end{enumerate}
+
+곡선 \(y=\log _{a} x+b\) 와 직선 \(y=x\) 가 두 점 \(\mathrm{A}, \mathrm{B}(\overline{\mathrm{OA}}<\overline{\mathrm{OB}})\) 에서 만난다. 점 A 를 지나고 \(y\) 축에 평행한 직선과 점 B 를 지나고 \(x\) 축에 평행한 직선이 만나는 점을 C 라 하자. 상수 \(c\) 에 대하여 점 C 를 지나는 곡선 \(y=-\log _{a} x+c\) 가 곡선 \(y=\log _{a} x+b\) 와 만나는 점을 D 라 하자. \(\overline{\mathrm{BD}}=5\) 이고 두 삼각형 \(\mathrm{ADC}, \mathrm{BDC}\) 의 넓이의 비는 \(2: 3\) 일 때, \(a^{3}+b+c\) 의 값은? (단, O 는 원점이다.)
+
+\begin{center}
+\includegraphics[max width=\textwidth]{2024_08_03_7612aa15dcbb07d9eb66g-05}
+\end{center}
+
+\(\begin{array}{lllll}\text { (1) } 12 & \text { (2) } 14 & \text { (3) } 16 & \text { (4) } 18 & \text { (5) } 20\end{array}\)\\
+14. 최고차항의 계수가 음수이고 \(f^{\prime}(0)=f^{\prime}(2)\) 인 삼차함수 \(f(x)\) 와 실수 \(k\) 에 대하여 함수
+
+\[
+g(x)= \begin{cases}f(x)+k x & (x<0) \\ -f(x) & (x \geq 0)\end{cases}
+\]
+
+이 실수 전체의 집합에서 연속이고 다음 조건을 만족시킬 때, \(f(-3)\) 의 최솟값은? [4점]
+
+(가) \(\lim _{x \rightarrow 0-} \frac{g(x)-g(0)}{x}=\lim _{x \rightarrow 0+} \frac{g(x)-g(0)}{x}+2\)
+
+(나) 함수 \(g(x)\) 가 구간 \((m, \infty)\) 에서 증가하도록 하는 실수 \(m\) 의 최솟값은 -1 이다.\\
+(1) 19\\
+(2) 21\\
+(3) 23\\
+(4) 25\\
+(5) 27
+
+\begin{enumerate}
+  \setcounter{enumi}{14}
+  \item 모든 항이 자연수인 수열 \(\left\{a_{n}\right\}\) 이 자연수 \(k\) 에 대하여 다음 조건을 만족시킨다.
+\end{enumerate}
+
+(가) 모든 자연수 \(n\) 에 대하여
+
+\[
+a_{n+2}= \begin{cases}\frac{12}{a_{n}} & \left(a_{n}<k\right) \\ 3 a_{n+1} & \left(a_{n} \geq k\right)\end{cases}
+\]
+
+이다.
+
+(나) \(a_{5}-a_{4}=9\)
+
+\(k \times a_{2}=210\) 일 때, \(a_{1}+a_{2}\) 의 값은? [4점]\\
+(1) 27\\
+(2) 30\\
+(3) 33\\
+(4) 36\\
+(5) 39
+
+\section*{단답형}
+\begin{enumerate}
+  \setcounter{enumi}{15}
+  \item 방정식
+\end{enumerate}
+
+\[
+\log _{2}(x+1)=\log _{4}(3 x+7)
+\]
+
+을 만족시키는 실수 \(x\) 의 값을 구하시오. [3점]
+
+\begin{enumerate}
+  \setcounter{enumi}{16}
+  \item 함수 \(f(x)\) 에 대하여 \(f^{\prime}(x)=x^{3}-12 x-5\) 이고 \(f(2)=3\) 일 때, \(f(0)\) 의 값을 구하시오. [3점]
+
+  \item 함수 \(f(x)=-2 x^{3}+9 x^{2}-12 x\) 가 \(x=\alpha\) 와 \(x=\beta\) 에서 극값을 갖는다. 두 점 \((\alpha, f(\alpha)),(\beta, f(\beta))\) 를 지나는 직선의 \(x\) 절편을 구하시오. (단, \(\alpha<\beta\) ) [3점]
+
+  \item 최고차항의 계수가 양수인 사차함수 \(f(x)\) 가 다음 조건을 만족시킨다.
+
+\end{enumerate}
+
+(가) 모든 실수 \(x\) 에 대하여 \(f(x)=f(4-x)\) 이다.
+
+(나) \(\left\{\lim _{x \rightarrow 2+} \frac{\sqrt{|f(x)|}}{x-2}\right\} \times\left\{\lim _{x \rightarrow 2-} \frac{\sqrt{|f(x)|}}{x-2}\right\}=-\frac{1}{2}\)
+
+\(f(0)=f(1)\) 일 때, \(f(7)\) 의 값을 구하시오. [4점]\\
+19. 수열 \(\left\{a_{n}\right\}\) 에 대하여
+
+\[
+a_{7}=10, \quad \sum_{k=1}^{6} k\left(2 a_{k}-a_{k+1}\right)=26
+\]
+
+일 때, \(\sum_{k=1}^{6}(k+1) a_{k}\) 의 값을 구하시오. [3점]
+
+\begin{enumerate}
+  \setcounter{enumi}{20}
+  \item 그림과 같이 \(\overline{\mathrm{AB}}=2 \sqrt{3}, \overline{\mathrm{BC}}=\overline{\mathrm{CD}}\) 인 사각형 ABCD 가 있다. 삼각형 ABC 의 넓이는 4 이고, 삼각형 ABC 의 외접원의 넓이는 \(\frac{75}{16} \pi\) 이다. 삼각형 ACD 의 둘레의 길이가 \(3 \sqrt{11}\) 일 때,
+\end{enumerate}
+
+\(40 \times \cos (\angle \mathrm{ACD})\) 의 값을 구하시오. (단, \(\angle \mathrm{ABC}>\frac{\pi}{2}\) ) [4점]
+
+\begin{center}
+\includegraphics[max width=\textwidth]{2024_08_03_7612aa15dcbb07d9eb66g-08}
+\end{center}
+
+\begin{enumerate}
+  \setcounter{enumi}{21}
+  \item 삼차함수 \(f(x)\) 와 실수 \(t\) 에 대하여 함수 \(g(x)\) 를
+\end{enumerate}
+
+\[
+g(x)= \begin{cases}f(x) & (x<t) \\ f^{\prime}(t)(x-t)+f(t) & (x \geq t)\end{cases}
+\]
+
+라 하자. \(a<b\) 인 모든 실수 \(a, b\) 에 대하여 부등식
+
+\[
+\int_{a}^{b}\{g(x)+2 x\} d x \geq 0
+\]
+
+이 성립하도록 하는 모든 실수 \(t\) 의 값의 범위는
+
+\(-1 \leq t \leq 1\) 이다. \(\int_{0}^{2} f(x) d x=6\) 일 때, \(\int_{-2}^{2} f(x) d x\) 의 최솟값은 \(m\) 이다. \(3 m\) 의 값을 구하시오. [4점]
+
+\begin{itemize}
+  \item 확인 사항
+\end{itemize}
+
+\begin{itemize}
+  \item 답안지의 해당란에 필요한 내용을 정확히 기입(표기)했는지 확인 하시오.
+
+  \item 이어서, 「선택과목(확률과 통계)」 문제가 제시되오니, 자신이 선택한 과목인지 확인하시오.
+
+\end{itemize}
+
+5 지선다형
+
+\begin{enumerate}
+  \setcounter{enumi}{22}
+  \item \(\left(3 x^{3}+\frac{1}{x}\right)^{6}\) 의 전개식에서 \(x^{2}\) 의 계수는? [2점]
+\end{enumerate}
+
+\(\begin{array}{lllll}\text { (1) } 120 & \text { (2) } 135 & \text { (3) } 150 & \text { (4) } 165 & \text { (5) } 180\end{array}\)\\
+24. 두 사건 \(A\) 와 \(B\) 는 서로 독립이고
+
+\[
+\mathrm{P}(A)=2 \mathrm{P}(A \cap B)=\frac{1}{3}
+\]
+
+일 때, \(\mathrm{P}(A \cup B)\) 의 값은? [3점]\\
+(1) \(\frac{1}{2}\)\\
+(2) \(\frac{7}{12}\)\\
+(3) \(\frac{2}{3}\)\\
+(4) \(\frac{3}{4}\)\\
+(5) \(\frac{5}{6}\)
+
+\begin{enumerate}
+  \setcounter{enumi}{24}
+  \item 8 개의 문자 \(a, a, a, a, b, b, b, c\) 를 모두 일렬로 나열할 때, 양 끝에 같은 문자가 나오도록 나열하는 경우의 수는? [3점]\\
+(1) 50\\
+(2) 60\\
+(3) 70\\
+(4) 80\\
+(5) 90
+
+  \item 주머니 A 에는 1 부터 4 까지의 자연수가 하나씩 적혀 있는 4 개의 공이 들어 있고, 주머니 B 에는 2 부터 6 까지의 자연수가 하나씩 적혀 있는 5 개의 공이 들어 있다. 두 주머니 \(\mathrm{A}, \mathrm{B}\) 에서 각각 공을 임의로 한 개씩 꺼낼 때, 꺼낸 두 개의 공에 적힌 수가 같거나 꺼낸 두 개의 공에 적힌 수의 곱이 짝수일 확률은?
+
+\end{enumerate}
+
+\(\begin{array}{lllll}\text { (1) } \frac{17}{20} & \text { (2) } \frac{4}{5} & \text { (3) } \frac{3}{4} & \text { (4) } \frac{7}{10} & \text { (5) } \frac{13}{20}\end{array}\)\\
+\includegraphics[max width=\textwidth, center]{2024_08_03_7612aa15dcbb07d9eb66g-10}
+
+B
+
+\begin{enumerate}
+  \setcounter{enumi}{26}
+  \item 정규분포 \(\mathrm{N}\left(m, \sigma^{2}\right)(\sigma>0)\) 을 따르는 확률변수 \(X\) 에 대하여 실수 전체의 집합에서 정의된 두 함수 \(f(t), g(t)\) 를
+\end{enumerate}
+
+\[
+\begin{aligned}
+& f(t)=\mathrm{P}(t \leq X \leq t+\sigma) \\
+& g(t)=\mathrm{P}(t-6 \leq X \leq t+2 \sigma)
+\end{aligned}
+\]
+
+라 하자. 두 함수 \(f(t), g(t)\) 가 모두 \(t=10\) 에서 최댓값을 가질 때, \(f(10)+g(10)\) 의 값을 오른쪽
+
+표준정규분포표를 이용하여 구한 것은?
+
+[3점]
+
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline
+\(z\) & \(\mathrm{P}(0 \leq Z \leq z)\) \\
+\hline
+0.5 & 0.1915 \\
+\hline
+1.0 & 0.3413 \\
+\hline
+1.5 & 0.4332 \\
+\hline
+2.0 & 0.4772 \\
+\hline
+\end{tabular}
+\end{center}
+
+\begin{enumerate}
+  \setcounter{enumi}{27}
+  \item 자연수 \(1,1,2,3, a(a>3)\) 이 하나씩 적힌 5 장의 카드가 들어 있는 주머니가 있다. 이 주머니에서 임의로 한 장의 카드를 꺼내어 카드에 적힌 수를 확인한 후 다시 넣는 시행을 한다. 이 시행을 4 번 반복하여 확인한 네 개의 수의 합을 \(X\) 라 하자. \(\mathrm{E}(X)=12\) 일 때, \(\mathrm{V}(X)\) 의 값은? [4점]\\
+(1) 26\\
+(2) \(\frac{132}{5}\)\\
+(3) \(\frac{134}{5}\)\\
+(4) \(\frac{136}{5}\)\\
+(5) \(\frac{138}{5}\)\\
+(1) 1.0656\\
+(2) 1.2494\\
+(3) 1.3374\\
+(4) 1.5490\\
+(5) 1.6370
+\end{enumerate}
+
+\section*{단답형}
+\begin{enumerate}
+  \setcounter{enumi}{28}
+  \item 한 개의 주사위를 1 번 던져서 나온 눈의 수가 3 의 배수이면 한 개의 동전을 4 번 던지고, 나온 눈의 수가 3 의 배수가 아니면 한 개의 동전을 2 번 던진다. 이 시행에서 동전의 앞면이 나온 횟수가 뒷면이 나온 횟수보다 클 때, 동전을 4 번 던졌을 확률은 \(p\) 이다. \(65 p\) 의 값을 구하시오. [4점]
+  \item 세 학생 \(\mathrm{A}, \mathrm{B}, \mathrm{C}\) 를 포함한 6 명의 학생에게 같은 종류의 볼펜 13 개를 다음 규칙에 따라 남김없이 나누어 주는 경우의 수를 구하시오. [4점]
+\end{enumerate}
+
+(가) 각 학생은 1 개 이상의 볼펜을 받는다.
+
+(나) 세 학생 \(\mathrm{A}, \mathrm{B}, \mathrm{C}\) 가 받는 볼펜의 개수 중 최댓값과 최솟값의 차는 1 이다.
+
+\footnotetext{\begin{itemize}
+  \item 확인 사항
+\end{itemize}
+
+\begin{itemize}
+  \item 답안지의 해당란에 필요한 내용을 정확히 기입(표기)했는지 확인 하시오.
+
+  \item 이어서, 「선택과목(미적분)」 문제가 제시되오니, 자신이 선택한 과목인지 확인하시오.
+
+\end{itemize}
+}2025학년도 대성마이맥 강대모의고사X 시즌1 4회 문제지
+
+5 지선다형
+
+\begin{enumerate}
+  \setcounter{enumi}{22}
+  \item \(\lim _{n \rightarrow \infty}\left(\frac{n^{2}}{n+1}-\frac{n^{2}+1}{n+4}\right)\) 의 값은? [2점]\\
+(1) 1\\
+(2) 2\\
+(3) 3\\
+(4) 4\\
+(5) 5
+
+  \item 곡선 \(y=x \sin \left(x^{2}\right)(0 \leq x \leq \sqrt{\pi})\) 와 \(x\) 축으로 둘러싸인 부분의 넓이는? [3점]\\
+(1) 1\\
+(2) 2\\
+(3) \(\pi\)\\
+(4) \(2 \pi\)\\
+(5) \(\pi^{2}\)
+
+  \item 두 곡선 \(y=\ln x, y=\ln (x-2)+1\) 에 모두 접하는 직선의 \(y\) 절편은? [3점]\\
+(1) \(\ln 2-2\)\\
+(2) \(\ln 2-1\)\\
+(3) \(\ln 2\)\\
+(4) \(\ln 2+1\)\\
+(5) \(\ln 2+2\)
+
+  \item 좌표평면 위를 움직이는 점 P 의 시각 \(t(t \geq 0)\) 에서의 위치 \((x, y)\) 가
+
+\end{enumerate}
+
+\[
+x=t-\sin t, \quad y=t \cos t
+\]
+
+이다. 양수 \(a\) 에 대하여 시각 \(t=0\) 에서 \(t=a\) 까지 점 P 가 움직인 거리를 \(f(a)\) 라 할 때, 함수 \(f(a)\) 에 대하여 \(f^{\prime}(\pi)\) 의 값은? [3점]\\
+(1) 1\\
+(2) \(\sqrt{2}\)\\
+(3) \(\sqrt{3}\)\\
+(4) 2\\
+(5) \(\sqrt{5}\)
+
+\begin{enumerate}
+  \setcounter{enumi}{26}
+  \item 좌표평면 위의 점 \(\mathrm{A}(5,0)\) 과 두 상수 \(a, b(a>0, b>0)\) 에 대하여 선분 OA 를 지름으로 하는 원이 직선 \(y=a x\) 와 제 1 사분면에서 만나는 점을 P , 직선 \(y=-b x\) 와 제 4 사분면에서 만나는 점을 Q 라 하자. \(a \times b=\frac{1}{8}\) 이고 \(\overline{\mathrm{PQ}}=4\) 일 때, \(a+b\) 의 값은? (단, O 는 원점이다.) [3점]\\
+(1) \(\frac{7}{6}\)\\
+(2) \(\frac{5}{4}\)\\
+(3) \(\frac{4}{3}\)\\
+(4) \(\frac{17}{12}\)\\
+(5) \(\frac{3}{2}\)
+\end{enumerate}
+
+\begin{center}
+\includegraphics[max width=\textwidth]{2024_08_03_7612aa15dcbb07d9eb66g-15}
+\end{center}
+
+\begin{enumerate}
+  \setcounter{enumi}{27}
+  \item 실수 전체의 집합에서 연속인 함수 \(f(x)\) 가 \(x \geq 1\) 인 모든 실수 \(x\) 에 대하여
+\end{enumerate}
+
+\[
+4 x f(2 x)=x f(x)+4 \int_{3}^{x} e^{t^{2}-2 t} d t
+\]
+
+를 만족시킨다. \(\int_{1}^{2} x f(x) d x=2 e^{3}\) 일 때, \(\int_{3}^{6} x f(x) d x\) 의 값은?
+
+[4점]\\
+(1) \(\frac{1}{e}\)\\
+(2) \(\frac{2}{e}\)\\
+(3) \(\frac{1}{e^{2}}\)\\
+(4) \(\frac{2}{e^{2}}\)\\
+(5) \(\frac{3}{e^{2}}\)
+
+\section*{단답형}
+\begin{enumerate}
+  \setcounter{enumi}{28}
+  \item \(f(0)>0\) 인 일차함수 \(f(x)\) 에 대하여
+\end{enumerate}
+
+\[
+g(x)=\lim _{t \rightarrow 0}\{f(t x)\}^{-\frac{1}{t}}
+\]
+
+이라 하면 함수 \(g(x)\) 는 실수 전체의 집합에서 정의된다. \(g(-1)=e^{2}\) 일 때 \(f(10)\) 의 값을 구하시오. [4점]\\
+30. \(b_{1}=4 a_{1}\) 이고, 공비가 0 이 아닌 두 등비수열 \(\left\{a_{n}\right\},\left\{b_{n}\right\}\) 이 있다. 수열 \(\left\{c_{n}\right\}\) 을 모든 자연수 \(n\) 에 대하여
+
+\[
+c_{n}= \begin{cases}a_{n} & \left(a_{n}<b_{n}\right) \\ 1 & \left(a_{n}=b_{n}\right) \\ b_{n} & \left(a_{n}>b_{n}\right)\end{cases}
+\]
+
+이라 할 때, \(c_{1}=b_{3}=8, c_{5}<b_{5}\) 이고, \(a_{n} \leq c_{n}\) 을 만족시키는 자연수 \(n\) 의 값은 1 과 3 뿐이다. \(\sum_{n=1}^{\infty}\left|c_{n}\right|\) 의 값을 구하시오. [4점]
+
+\section*{* 확인 사항}
+\begin{itemize}
+  \item 답안지의 해당란에 필요한 내용을 정확히 기입(표기)했는지 확인 하시오.
+
+  \item 이어서, 「선택과목(기하)」 문제가 제시되오니, 자신이 선택한 과목인지 확인하시오.
+
+\end{itemize}
+
+\section*{5 지선다형}
+\begin{enumerate}
+  \setcounter{enumi}{22}
+  \item 좌표공간의 점 \(\mathrm{A}(3,1,-2)\) 에서 \(z\) 축에 내린 수선의 발을 P 라 하고, 점 A 를 \(x y\) 평면에 대하여 대칭이동한 점을 Q 라 할 때, 선분 PQ 의 길이는? [2점]\\
+(1) \(2 \sqrt{6}\)\\
+(2) 5\\
+(3) \(\sqrt{26}\)\\
+(4) \(3 \sqrt{3}\)\\
+(5) \(2 \sqrt{7}\)
+
+  \item 두 초점이 \(\mathrm{F}, \mathrm{F}^{\prime}\) 인 타원 \(\frac{x^{2}}{16}+\frac{y^{2}}{12}=1\) 이 있다. 이 타원 위의 점 A 에 대하여 삼각형 \(\mathrm{AFF}^{\prime}\) 의 둘레의 길이는? (단, 점 A 는 \(x\) 축 위에 있지 않다.) [3점]\\
+(1) 11\\
+(2) 12\\
+(3) 13\\
+(4) 14\\
+(5) 15
+
+  \item 초점이 F 인 포물선 \(y^{2}=6 x\) 위에 있는 제 1 사분면 위의 점 P 에 대하여 \(\overline{\mathrm{PF}}=15\) 일 때, 점 P 에서의 접선이 포물선의 준선과 만나는 점의 좌표는 \((a, b)\) 이다. \(a \times b\) 의 값은? [3점]\\
+(1) -3\\
+(2) \(-\frac{9}{2}\)\\
+(3) -6\\
+(4) \(-\frac{15}{2}\)\\
+(5) -9
+
+  \item 삼각형 ABC 에서 두 변 \(\mathrm{AB}, \mathrm{AC}\) 의 중점을 각각 \(\mathrm{M}, \mathrm{N}\) 이라 하자. 선분 BN 과 선분 CM 의 교점을 D 라 할 때,
+
+\end{enumerate}
+
+\[
+\overrightarrow{\mathrm{AD}}+\overrightarrow{\mathrm{CM}}=m \overrightarrow{\mathrm{AB}}+n \overrightarrow{\mathrm{BC}}
+\]
+
+이다. \(m \times n\) 의 값은? (단, \(m\) 과 \(n\) 은 실수이다.) [3점]\\
+(1) \(-\frac{1}{6}\)\\
+(2) \(-\frac{1}{7}\)\\
+(3) \(-\frac{1}{8}\)\\
+(4) \(-\frac{1}{9}\)\\
+(5) \(-\frac{1}{10}\)
+
+\begin{center}
+\includegraphics[max width=\textwidth]{2024_08_03_7612aa15dcbb07d9eb66g-18}
+\end{center}
+
+\begin{enumerate}
+  \setcounter{enumi}{26}
+  \item 밑면의 반지름의 길이가 3 이고 높이가 6 인 원뿔이 있다.
+\end{enumerate}
+
+이 원뿔의 밑면의 중심을 O 라 하고 원뿔의 꼭짓점을 A 라 할 때, 원뿔의 옆면 위의 서로 다른 두 점 \(\mathrm{B}, \mathrm{C}\) 가 다음 조건을 만족시킨다.
+
+(가) 두 삼각형 \(\mathrm{OAB}, \mathrm{OAC}\) 의 넓이는 각각 6 이다.
+
+(나) 점 A 와 직선 BC 사이의 거리는 \(3 \sqrt{2}\) 이다.
+
+삼각형 OBC 의 넓이는? (단, 점 A 의 원뿔의 밑면 위로의 정사영은 점 O 와 일치한다.) [3점]\\
+(1) \(2 \sqrt{3}\)\\
+(2) \(\sqrt{14}\)\\
+(3) 4\\
+(4) \(3 \sqrt{2}\)\\
+(5) \(2 \sqrt{5}\)
+
+\begin{center}
+\includegraphics[max width=\textwidth]{2024_08_03_7612aa15dcbb07d9eb66g-19(1)}
+\end{center}
+
+\begin{enumerate}
+  \setcounter{enumi}{27}
+  \item 좌표평면에서 한 변의 길이가 4 인 정사각형 ABCD 에 대하여 점 P 가 다음 조건을 만족시킨다.
+\end{enumerate}
+
+(가) \((\overrightarrow{\mathrm{PA}}+\overrightarrow{\mathrm{PB}}+2 \overrightarrow{\mathrm{PC}}) \cdot \overrightarrow{\mathrm{PD}} \leq 0\)
+
+(나) \(0 \leq \overrightarrow{\mathrm{AP}} \cdot \overrightarrow{\mathrm{BD}} \leq 8\)
+
+\(|\overrightarrow{\mathrm{PB}}|\) 의 값이 최대가 되도록 하는 점 P 를 Q , \(|\overrightarrow{\mathrm{PB}}|\) 의 값이 최소가 되도록 하는 점 P 를 R 이라 할 때, \(\overrightarrow{\mathrm{AQ}} \cdot \overrightarrow{\mathrm{AR}}\) 의 값은? [4점]
+
+\(\begin{array}{lllll}\text { (1) } 14 & \text { (2) } 15 & \text { (3) } 16 & \text { (4) } 17 & \text { (5) } 18\end{array}\)
+
+\begin{center}
+\includegraphics[max width=\textwidth]{2024_08_03_7612aa15dcbb07d9eb66g-19}
+\end{center}
+
+\section*{단답형}
+\begin{enumerate}
+  \setcounter{enumi}{28}
+  \item 두 초점이 \(\mathrm{F}(c, 0), \mathrm{F}^{\prime}(-c, 0)(c>0)\) 인 쌍곡선 위에 있는 제 2 사분면 위의 점 P 에 대하여 직선 \(\mathrm{F}^{\prime} \mathrm{P}\) 가 쌍곡선의 한 점근선과 평행하다. 사각형 \(\mathrm{PF}^{\prime} \mathrm{FQ}\) 가 평행사변형이 되도록
+\end{enumerate}
+
+\begin{itemize}
+  \item 점 Q 를 잡고, 선분 PQ 가 쌍곡선과 만나는 점 중 P 가 아닌 점을 R 이라 할 때,
+\end{itemize}
+
+\[
+\overline{\mathrm{PF}^{\prime}}=\overline{\mathrm{RQ}}, \quad \overline{\mathrm{PF}}=2
+\]
+
+이다. 쌍곡선의 주축의 길이를 \(k\) 라 할 때, \(28 k\) 의 값을 구하시오. (단, 직선 \(\mathrm{F}^{\prime} \mathrm{P}\) 의 기울기는 양수이다.) [4점]
+
+\begin{center}
+\includegraphics[max width=\textwidth]{2024_08_03_7612aa15dcbb07d9eb66g-20(1)}
+\end{center}
+
+\begin{enumerate}
+  \setcounter{enumi}{29}
+  \item 좌표공간에 중심이 \(\mathrm{C}(5,2 \sqrt{2}, \sqrt{3})\) 이고
+\end{enumerate}
+
+점 \(\mathrm{A}(0,0,2 \sqrt{3})\) 을 지나는 구 \(S\) 가 있다. \(x\) 축 위의 점 B 를 \(\angle \mathrm{ACB}=\frac{\pi}{2}\) 가 되도록 잡는다. 구 \(S\) 위를 움직이는 점 P 에 대하여 삼각형 ABP 의 넓이가 최대가 되도록 하는 점 P 를 X 라 할 때, 삼각형 ABX 의 \(x y\) 평면 위로의 정사영의 넓이는 \(k \sqrt{2}\) 이다. \(k\) 의 값을 구하시오. [4점]
+
+\begin{center}
+\includegraphics[max width=\textwidth]{2024_08_03_7612aa15dcbb07d9eb66g-20}
+\end{center}
+
+\section*{* 확인 사항}
+\begin{itemize}
+  \item 답안지의 해당란에 필요한 내용을 정확히 기입(표기)했는지 확인 하시오.
+\end{itemize}
+
+\begin{itemize}
+  \item 
+\end{itemize}
+
+\begin{itemize}
+  \item 
+  \item 
+\end{itemize}
+
+
+\end{document}

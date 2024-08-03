@@ -1,0 +1,1758 @@
+% This LaTeX document needs to be compiled with XeLaTeX.
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\graphicspath{ {./images/} }
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage[fallback]{xeCJK}
+\usepackage{polyglossia}
+\usepackage{fontspec}
+\setCJKmainfont{Noto Serif CJK KR}
+\setCJKfallbackfamilyfont{\CJKrmdefault}{
+  {Noto Serif CJK JP}
+}
+
+\setmainlanguage{english}
+\setmainfont{CMU Serif}
+
+\title{2025학년도 대학수학능력시험 \\
+ 대성마이맥 강대모의고사X 시즌1 4회 정답 및 해설 }
+
+\author{}
+\date{}
+
+
+\begin{document}
+\maketitle
+\section*{- 수학 영역 ・}
+공통과목
+
+\begin{center}
+\includegraphics[max width=\textwidth]{2024_08_03_9fb01ff65e78f43c421fg-1}
+\end{center}
+
+해설
+
+\begin{enumerate}
+  \item \(\left(\frac{3^{\sqrt{2}}}{3}\right)^{\sqrt{2}} \times 3^{\sqrt{2}}=3^{(\sqrt{2}-1) \times \sqrt{2}} \times 3^{\sqrt{2}}\)
+\end{enumerate}
+
+\[
+\begin{aligned}
+& =3^{2-\sqrt{2}+\sqrt{2}} \\
+& =3^{2} \\
+& =9
+\end{aligned}
+\]
+
+\begin{enumerate}
+  \setcounter{enumi}{1}
+  \item \(f(x)=x^{4}+7\) 에서 \(f^{\prime}(x)=4 x^{3}\) 이므로
+\end{enumerate}
+
+\[
+\begin{aligned}
+\lim _{x \rightarrow 2} \frac{f(x)-f(2)}{2 x-4} & =\lim _{x \rightarrow 2}\left\{\frac{1}{2} \times \frac{f(x)-f(2)}{x-2}\right\} \\
+& =\frac{1}{2} \lim _{x \rightarrow 2} \frac{f(x)-f(2)}{x-2} \\
+& =\frac{1}{2} f^{\prime}(2) \\
+& =\frac{1}{2} \times\left(4 \times 2^{3}\right) \\
+& =16
+\end{aligned}
+\]
+
+\begin{enumerate}
+  \setcounter{enumi}{2}
+  \item \(\sin \theta<0\) 이므로 \(\sin \theta=-\sqrt{1-\left(\frac{2}{3}\right)^{2}}=-\frac{\sqrt{5}}{3}\)
+\end{enumerate}
+
+따라서 \(\tan \theta=\frac{\sin \theta}{\cos \theta}=\frac{-\frac{\sqrt{5}}{3}}{\frac{2}{3}}=-\frac{\sqrt{5}}{2}\)
+
+\begin{enumerate}
+  \setcounter{enumi}{3}
+  \item 함수 \(f(x)\) 는 \(x=a\) 에서 연속이므로 \(\lim _{x \rightarrow a-} f(x)=\lim _{x \rightarrow a+} f(x)=f(a)\)
+\end{enumerate}
+
+\(\lim _{x \rightarrow a-} f(x)=\lim _{x \rightarrow a-}(2 x-a)=a\),
+
+\(\lim _{x \rightarrow a+} f(x)=\lim _{x \rightarrow a+}\left(x^{2}-3 x+4\right)=a^{2}-3 a+4\),
+
+\(f(a)=a\)
+
+이므로 \(a=a^{2}-3 a+4\) 에서
+
+\(a^{2}-4 a+4=0, \quad(a-2)^{2}=0\)
+
+따라서 \(a=2\)
+
+\begin{enumerate}
+  \setcounter{enumi}{4}
+  \item 등비수열 \(\left\{a_{n}\right\}\) 의 공비를 \(r\) 이라 하면 \(a_{2}=a_{1} r=2 r<0\) 에서 \(r<0\) \(S_{4}-S_{2}=2 a_{2}\) 이므로 \(a_{4}+a_{3}=2 a_{2}\) 에서 \(2 r^{3}+2 r^{2}=4 r, \quad 2 r(r+2)(r-1)=0\) 따라서 \(r=-2(\because r<0)\) 이므로
+\end{enumerate}
+
+\[
+S_{5}=\frac{2 \times\left\{1-(-2)^{5}\right\}}{1-(-2)}=22
+\]
+
+\begin{enumerate}
+  \setcounter{enumi}{5}
+  \item \(f(x)=3 x^{3}+a x^{2}-\left(a^{2}-10\right) x+2\) 에서
+\end{enumerate}
+
+\(f^{\prime}(x)=9 x^{2}+2 a x-\left(a^{2}-10\right)\)
+
+함수 \(f(x)\) 가 일대일대응이 되려면 함수 \(f(x)\) 는 실수 전체의 집합에서 증가해야 한다. 따라서 모든 실수 \(x\) 에 대하여 \(f^{\prime}(x) \geq 0\) 이므로 이차방정식 \(f^{\prime}(x)=0\) 의 판별식을 \(D\) 라 할 때 \(D \leq 0\) 이다. 곧
+
+\(\frac{D}{4}=a^{2}+9\left(a^{2}-10\right) \leq 0, \quad 10(a+3)(a-3) \leq 0\) 에서 \(-3 \leq a \leq 3\)
+
+따라서 실수 \(a\) 의 최댓값과 최솟값의 차는 \(3-(-3)=6\)
+
+\begin{enumerate}
+  \setcounter{enumi}{6}
+  \item \(\int_{2}^{x}\{f(x)-f(t)\} d t=x^{3}-12 x+16\) 에서 \((x-2) f(x)-\int_{2}^{x} f(t) d t=x^{3}-12 x+16\) 이므로 양변을 \(x\) 에 대하여 미분하면 \(f(x)+(x-2) f^{\prime}(x)-f(x)=3 x^{2}-12\) \((x-2) f^{\prime}(x)=3(x-2)(x+2)\)
+\end{enumerate}
+
+\(f^{\prime}(x)\) 는 다항함수이므로
+
+\(f^{\prime}(x)=3(x+2)\)
+
+따라서 \(f^{\prime}(2)=3 \times(2+2)=12\)
+
+\begin{enumerate}
+  \setcounter{enumi}{7}
+  \item 등차수열 \(\left\{a_{n}\right\}\) 의 공차를 \(d\) 라 하자.
+\end{enumerate}
+
+\(b_{n}=\left(a_{n+2}\right)^{2}-\left(a_{n}\right)^{2}\)
+
+\(=\left(a_{n+2}-a_{n}\right)\left(a_{n+2}+a_{n}\right)\)
+
+\(=2 d \times 2 a_{n+1}\)
+
+\(=4 d \times a_{n+1}\)
+
+그러므로
+
+\(\sum_{k=1}^{5} b_{k}=\sum_{k=1}^{5}\left(4 d \times a_{k+1}\right)\)
+
+\(=4 d \times \frac{5\left(a_{2}+a_{6}\right)}{2}\)
+
+\(=4 d \times \frac{5 \times 2 a_{4}}{2}\)
+
+\(=20 d \quad\left(\because a_{4}=1\right)\)
+
+\(=15\)
+
+에서 \(d=\frac{3}{4}\)
+
+따라서 \(b_{n}=3 a_{n+1}\) 이므로
+
+\(b_{7}=3 a_{8}=3 \times\left(a_{4}+4 d\right)=12\)
+
+\begin{enumerate}
+  \setcounter{enumi}{8}
+  \item 두 점 \(\mathrm{P}, \mathrm{Q}\) 의 시각 \(t\) 에서의 위치를 각각 \(x_{1}(t), x_{2}(t)\) 라 하면
+\end{enumerate}
+
+\(v_{1}(t)-v_{2}(t)=\left(t^{2}-3 t\right)-(t-3)\)
+
+\[
+=t^{2}-4 t+3
+\]
+
+에서
+
+\(x_{1}(t)-x_{2}(t)\)
+
+\(=\int_{0}^{t}\left(s^{2}-4 s+3\right) d s \quad\left(\because x_{1}(0)=x_{2}(0)=0\right)\)
+
+\(=\left[\frac{1}{3} s^{3}-2 s^{2}+3 s\right]_{0}^{t}\)
+
+\(=\frac{1}{3} t^{3}-2 t^{2}+3 t\)
+
+\(=\frac{1}{3} t(t-3)^{2}\)
+
+두 점 \(\mathrm{P}, \mathrm{Q}\) 가 시각 \(t=k(k>0)\) 에서 만나므로 \(x_{1}(k)-x_{2}(k)=0\) \(\frac{1}{3} k(k-3)^{2}=0\)
+
+곧, \(k=3(\because k>0)\)
+
+따라서 시각 \(t=0\) 에서 시각 \(t=2 k=6\) 까지 점 P 가 움직인 거리는
+
+\(\int_{0}^{6}|v(t)| d t=\int_{0}^{6}\left|t^{2}-3 t\right| d t\)
+
+\(=-\int_{0}^{3}\left(t^{2}-3 t\right) d t+\int_{3}^{6}\left(t^{2}-3 t\right) d t\)
+
+\(=-\left[\frac{1}{3} t^{3}-\frac{3}{2} t^{2}\right]_{0}^{3}+\left[\frac{1}{3} t^{3}-\frac{3}{2} t^{2}\right]_{3}^{6}\)
+
+\(=\frac{9}{2}+\frac{45}{2}\)
+
+\(=27\)
+
+\begin{enumerate}
+  \setcounter{enumi}{9}
+  \item \(k-3 n\) 의 \(n\) 제곱근 중에서 실수인 것의 개수가 \(g(n)\) 이므로 \(x\) 에 대한 방정식 \(x^{n}=k-3 n\) 의 서로 다른 실 근의 개수가 \(g(n)\) 이다.
+\end{enumerate}
+
+\(n\) 이 3 이상의 홀수이면 \(k\) 의 값에 관계없이 \(g(n)=1\)
+
+따라서 \(g(3)=g(5)=g(7)=g(9)=1\) 이고 \(g(3)+g(5)+g(7)+g(9)=4\) 이므로
+
+\(g(2)+g(4)+g(6)+g(8)+g(10)=8-4=4\)
+
+\(n\) 이 짝수이면
+
+\(k-3 n<0\) 일 때 \(g(n)=0\),
+
+\(k-3 n=0\) 일 때 \(g(n)=1\),
+
+\(k-3 n>0\) 일 때 \(g(n)=2\)
+
+이고
+
+\(n\) 의 값이 증가하면 \(k-3 n\) 의 값은 감소하므로
+
+...... (L)
+
+(ㄱ)을 만족시키려면
+
+\(g(2)=g(4)=2\) 이고
+
+\(g(6)=g(8)=g(10)=0\) 이어야 하고
+
+(ㄴ)에 의하여 \(n=4, n=6\) 일 때 \(k-3 n\) 의 부호를 살펴 보면 된다.
+
+\(g(4)=2\) 에서 \(k-3 \times 4>0\), 곧 \(k>12\) 이고
+
+\(g(6)=0\) 에서 \(k-3 \times 6<0\), 곧 \(k<18\) 이므로
+
+\(12<k<18\)
+
+따라서 이를 만족시키는 모든 자연수 \(k\) 의 값의 합은 \(13+14+15+16+17=75\)
+
+\begin{enumerate}
+  \setcounter{enumi}{10}
+  \item 원 \(x^{2}+y^{2}=25\) 위의 점 \(\mathrm{A}(0,5)\) 에서의 접선의 방정식은 \(y=5\) 이고, 곡선 \(y=f(x)\) 위의 점 A 에서의 접선이 원 \(x^{2}+y^{2}=25\) 에 접하므로 \(f(0)=5, f^{\prime}(0)=0\)
+\end{enumerate}
+
+따라서 두 상수 \(a(a \neq 0), b\) 에 대하여
+
+\(f(x)=a x^{3}+b x^{2}+5\)
+
+로 놓을 수 있다.
+
+또한, 원 \(x^{2}+y^{2}=25\) 위의 점 \(\mathrm{B}(4,3)\) 에서의 접선의 방정식은 \(4 x+3 y=25\),
+
+곧 \(y=-\frac{4}{3} x+\frac{25}{3}\) 이고, 곡선 \(y=f(x)\) 위의 점 B 에서의 접선이 원 \(x^{2}+y^{2}=25\) 에 접하므로
+
+\(f(4)=3, f^{\prime}(4)=-\frac{4}{3}\)
+
+\(f(4)=64 a+16 b+5=3\) 에서
+
+\(32 a+8 b=-1\)
+
+\(f^{\prime}(x)=3 a x^{2}+2 b x\) 이므로
+
+\(f^{\prime}(4)=48 a+8 b=-\frac{4}{3}\) 에서
+
+(
+
+\section*{수학 영역}
+\(36 a+6 b=-1\)
+
+(ㄱ), (ㄴ)을 연립하여 풀면 \(a=-\frac{1}{48}, b=-\frac{1}{24}\)
+
+따라서 \(f(x)=-\frac{1}{48} x^{3}-\frac{1}{24} x^{2}+5\) 이므로
+
+\(f(-6)=\frac{9}{2}-\frac{3}{2}+5=8\)
+
+\begin{enumerate}
+  \setcounter{enumi}{11}
+  \item 함수 \(f(x)=a \tan \frac{\pi x}{2}(a>0)\) 의 주기는 \(\frac{\pi}{\frac{\pi}{2}}=2\) 이 므로 \(-1<x<5\) 에서 함수 \(y=f(x)\) 의 그래프는 그림 과 같다.
+\end{enumerate}
+
+\begin{center}
+\includegraphics[max width=\textwidth]{2024_08_03_9fb01ff65e78f43c421fg-2(2)}
+\end{center}
+
+방정식
+
+\(\{f(x)+x-1\} \times\{f(x)+x-2\}=0 \quad(-1<x<5)\) 의 실근은 \(-1<x<5\) 에서 함수 \(y=f(x)\) 의 그래프와 두 직선 \(y=-x+1, y=-x+2\) 의 교점의 \(x\) 좌표와 같다.
+
+열린구간 \((-1,5)\) 에서 방정식 \(f(x)=-x+1\) 의 실근 을 작은 것부터 차례로 \(\alpha_{1}, \alpha_{2}, \alpha_{3}\) 이라 하면,
+
+함수 \(y=f(x)(-1<x<3)\) 의 그래프와
+
+직선 \(y=-x+1\) 은 모두 점 \((1,0)\) 에 대하여
+
+대칭이므로 \(\frac{\alpha_{1}+\alpha_{2}}{2}=1\)
+
+곧, \(\alpha_{1}+\alpha_{2}+\alpha_{3}=2+\alpha_{3}\)
+
+열린구간 \((-1,5)\) 에서 방정식 \(f(x)=-x+2\) 의 실근 을 작은 것부터 차례로 \(\beta_{1}, \beta_{2}, \beta_{3}\) 이라 하면,
+
+함수 \(y=f(x)\) 의 그래프와 직선 \(y=-x+2\) 는 모두 점 \((2,0)\) 에 대하여 대칭이므로
+
+\(\beta_{2}=2\) 이고 \(\frac{\beta_{1}+\beta_{3}}{2}=2\) 이다.
+
+곧, \(\beta_{1}+\beta_{2}+\beta_{3}=6\)
+
+(ㄱ), (ㄴ)에서 방정식
+
+\(\{f(x)+x-1\} \times\{f(x)+x-2\}=0 \quad(-1<x<5)\)
+
+의 모든 실근의 합은
+
+\(\left(\alpha_{1}+\alpha_{2}+\alpha_{3}\right)+\left(\beta_{1}+\beta_{2}+\beta_{3}\right)\)
+
+\(=\left(2+\alpha_{3}\right)+6\)
+
+\(=8+\alpha_{3}\)
+
+\(=\frac{23}{2}\)
+
+따라서 \(\alpha_{3}=\frac{7}{2}\) 이고 방정식 \(f(x)=-x+1\) 에서
+
+\(f\left(\frac{7}{2}\right)=-\frac{7}{2}+1=-\frac{5}{2}\)
+
+곧, \(a \tan \frac{7 \pi}{4}=-a=-\frac{5}{2}\)
+
+따라서 \(a=\frac{5}{2}\)\\
+13. 점 D 에서 두 직선 \(\mathrm{AC}, \mathrm{BC}\) 에 내린 수선의 발을 각 각 \(\mathrm{H}, \mathrm{I}\) 라 하자.
+
+\begin{center}
+\includegraphics[max width=\textwidth]{2024_08_03_9fb01ff65e78f43c421fg-2(1)}
+\end{center}
+
+직선 \(y=x\) 의 기울기는 1 이므로
+
+직각삼각형 ACB 에서 \(\overline{\mathrm{AC}}=\overline{\mathrm{BC}}\) 이고,
+
+두 삼각형 \(\mathrm{ADC}, \mathrm{BDC}\) 의 넓이의 비는 \(2: 3\) 이므로
+
+\(\frac{(\text { 삼각형 } \mathrm{BDC} \text { 의 넓이) }}{(\text { 삼각형 } \mathrm{ADC} \text { 의 넓이) }}=\frac{\frac{1}{2} \times \overline{\mathrm{BC}} \times \overline{\mathrm{DI}}}{\frac{1}{2} \times \overline{\mathrm{AC}} \times \overline{\mathrm{DH}}}=\frac{\overline{\mathrm{DI}}}{\overline{\mathrm{DH}}}\) \(=\frac{3}{2}\)
+
+따라서 상수 \(k(k>0)\) 에 대하여 \(\overline{\mathrm{DH}}=2 k\) 라 하면 \(\overline{\mathrm{DI}}=3 k\) 이다.
+
+사각형 CHDI 는 직사각형이므로
+
+\(\overline{\mathrm{HC}}=\overline{\mathrm{DI}}=3 k, \overline{\mathrm{IC}}=\overline{\mathrm{DH}}=2 k\) 이다.
+
+두 곡선 \(y=\log _{a} x+b, y=-\log _{a} x+c\) 는
+
+직선 HD 에 대하여 대칭이므로
+
+\(\overline{\mathrm{HA}}=\overline{\mathrm{HC}}=3 k\)
+
+따라서 \(\overline{\mathrm{BC}}=\overline{\mathrm{AC}}=6 k\)
+
+\(\overline{\mathrm{BI}}=\overline{\mathrm{BC}}-\overline{\mathrm{IC}}=6 k-2 k=4 k\)
+
+직각삼각형 BID 에서 \(\overline{\mathrm{BD}}^{2}=\overline{\mathrm{BI}}^{2}+\overline{\mathrm{DI}}^{2}\) 이므로 \(5^{2}=16 k^{2}+9 k^{2}\)
+
+\(25=25 k^{2}\), 곧 \(k=1(\because k>0)\)
+
+따라서 \(\overline{\mathrm{AC}}=\overline{\mathrm{BC}}=6, \overline{\mathrm{HA}}=3, \overline{\mathrm{IC}}=2\)
+
+점 A 의 좌표를 \((\alpha, \alpha)\) ( \(\alpha\) 는 상수)라 하면
+
+점 B 의 좌표는 \((\alpha+6, \alpha+6)\) 이고
+
+점 D 의 좌표는 \((\alpha+2, \alpha+3)\) 이다.
+
+세 점 \(\mathrm{A}, \mathrm{B}, \mathrm{D}\) 는 모두 곡선 \(y=\log _{a} x+b\) 위에 있으 므로
+
+\(\alpha=\log _{a} \alpha+b\)
+
+\(\alpha+6=\log _{a}(\alpha+6)+b\)
+
+\(\alpha+3=\log _{a}(\alpha+2)+b\)
+
+(ㄷ)에서 (ㄱ)을 변끼리 빼면
+
+\(6=\log _{a}\left(\frac{\alpha+6}{\alpha}\right), a^{6}=1+\frac{6}{\alpha}\), 곧 \(a^{6}-1=\frac{6}{\alpha}\)
+
+(ㄷ)에서 (ㄱ)을 변끼리 빼면
+
+\(3=\log _{a}\left(\frac{\alpha+2}{\alpha}\right), a^{3}=1+\frac{2}{\alpha}\), 곧 \(a^{3}-1=\frac{2}{\alpha}\)
+
+\(a^{6}-1=3\left(a^{3}-1\right)\)
+
+\(a^{6}-3 a^{3}+2=0\)
+
+\(\left(a^{3}-1\right)\left(a^{3}-2\right)=0\)
+
+\(a>1\) 이므로 \(a^{3}=2\), 곧 \(a=2^{\frac{1}{3}}\)
+
+\(a^{3}-1=\frac{2}{\alpha}\) 이므로 \(\alpha=\frac{2}{a^{3}-1}=2\)
+
+(ㄱ)에서 \(b=\alpha-\log _{a} \alpha=2-\log _{2^{\frac{1}{3}}} 2=-1\)
+
+점 D 는 곡선 \(y=-\log _{a} x+c\) 위에 있으므로
+
+\(\alpha+3=-\log _{a}(\alpha+2)+c\) 에서
+
+\(c=\alpha+3+\log _{a}(\alpha+2)=2+3+\log _{2^{\frac{1}{3}}} 4\)
+
+따라서 \(a^{3}+b+c=2+(-1)+11=12\)
+
+두 곡선 \(y=\log _{a} x+b, y=-\log _{a} x+c\) 는\\
+직선 HD , 곧 직선 \(y=5\) 에 대하여 대칭이므로 \(b+c\) 의 값을 다음과 같이 구할 수도 있다. \(\log _{a} x+b+\left(-\log _{a} x+c\right)=2 \times 5\) 에서 \(b+c=10\)
+
+\section*{14. 함수}
+\(g(x)= \begin{cases}f(x)+k x & (x<0) \\ -f(x) & (x \geq 0)\end{cases}\)
+
+이 \(x=0\) 에서 연속이므로
+
+\(\lim _{x \rightarrow 0-} g(x)=\lim _{x \rightarrow 0+} g(x)\) 에서
+
+\(f(0)=-f(0)\), 곧 \(f(0)=0\)
+
+\(f(x)=a x^{3}+b x^{2}+c x \quad(a, b, c\) 는 상수, \(a<0)\) 이라 하면
+
+\(f^{\prime}(x)=3 a x^{2}+2 b x+c\)
+
+\(f^{\prime}(0)=f^{\prime}(2)\) 이므로
+
+\(c=12 a+4 b+c\), 곧 \(b=-3 a\)
+
+따라서 \(f(x)=a x^{3}-3 a x^{2}+c x\) 이고
+
+\(f^{\prime}(x)=3 a x^{2}-6 a x+c=3 a(x-1)^{2}-3 a+c\)
+
+조건 (가)의
+
+\(\lim _{x \rightarrow 0-} \frac{g(x)-g(0)}{x}=\lim _{x \rightarrow 0+} \frac{g(x)-g(0)}{x}+2\)
+
+에서
+
+\(\lim _{t \rightarrow 0-} g^{\prime}(t)=\lim _{s \rightarrow 0+} g^{\prime}(s)+2 \quad(\because\) 평균값 정리 \()\) 이고
+
+\(g^{\prime}(x)= \begin{cases}f^{\prime}(x)+k & (x<0) \\ -f^{\prime}(x) & (x>0)\end{cases}\)
+
+이므로
+
+\(f^{\prime}(0)+k=-f^{\prime}(0)+2\)
+
+곧, \(k=-2 c+2\left(\because f^{\prime}(0)=c\right)\)
+
+조건 (나)에 의하여
+
+두 구간 \((-1,0),(0, \infty)\) 에서 \(g^{\prime}(x) \geq 0\) 이고 \(x=-1\) 의 좌우에서 \(g^{\prime}(x)\) 의 부호가 음에서 양으로 바 꺼어야 한다.
+
+\begin{center}
+\includegraphics[max width=\textwidth]{2024_08_03_9fb01ff65e78f43c421fg-2}
+\end{center}
+
+따라서 \(g^{\prime}(-1)=0\) 이고, \(x>0\) 인 모든 실수 \(x\) 에 대하여 \(g^{\prime}(x)=-f^{\prime}(x) \geq 0\) 이어야 한다.
+
+\(g^{\prime}(-1)=f^{\prime}(-1)+k=9 a+c+k=0\) 에서
+
+\(k=-9 a-c\)
+
+(ㄱ), (ㄴ)에서
+
+\(-2 c+2=-9 a-c\), 곧 \(c=9 a+2\)
+
+\(x>0\) 인 모든 실수 \(x\) 에 대하여
+
+\(g^{\prime}(x)=-f^{\prime}(x) \geq 0\) 이므로
+
+\(f^{\prime}(1)=-3 a+c \leq 0\)
+
+\(-3 a+(9 a+2) \leq 0\) 에서 \(a \leq-\frac{1}{3}\)
+
+\(f(x)=a x^{3}-3 a x^{2}+(9 a+2) x\) 에서
+
+\(f(-3)=-81 a-6\) 이므로
+
+\(f(-3)\) 의 최솟값은 \(a=-\frac{1}{3}\) 일 때 21
+
+\begin{enumerate}
+  \setcounter{enumi}{14}
+  \item 수열 \(\left\{a_{n}\right\}\) 은 모든 항이 자연수이고
+\end{enumerate}
+
+\(a_{5}-a_{4}=9\) 에서 \(a_{5}=a_{4}+9\) 이므로 \(a_{5}>\)
+
+조건 (가)에서 \(a_{3} \geq k\) 이면
+
+\(a_{5}=3 a_{4}\) 에서 \(a_{5}-a_{4}=3 a_{4}-a_{4}=2 a_{4}=9\) 이므로 (ㄱ)을 만족시키지 않는다.
+
+따라서 \(a_{3}<k\) 이고 \(a_{5}=\frac{12}{a_{3}}\), 곧 \(a_{3} \times a_{5}=12\)
+
+(ㄱ), (ㄴ)에 의하여 \(a_{3}=1, a_{5}=12\) 이고 \(a_{4}=3\) 이다. 이때 \(a_{3}=1\) 에서 \(a_{3} \neq 3 a_{2}\) 이므로
+
+\(a_{1}<k\) 이고 \(a_{3}=\frac{12}{a_{1}}=1\)
+
+곧, \(a_{1}=12\) 이고 \(k>a_{1}=12\)
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+\(n\) & 1 & 2 & 3 & 4 & 5 \\
+\hline
+\(a_{n}\) & 12 &  & 1 & 3 & 12 \\
+\hline
+\end{tabular}
+\end{center}
+
+\(a_{2}\) 의 값의 범위에 따라 경우를 나누어 살펴보자.
+
+( i ) \(a_{2}<k\) 인 경우
+
+\(a_{4}=\frac{12}{a_{2}}=3\) 에서 \(a_{2}=4\)
+
+이 경우 \(k \times a_{2}=210\) 을 만족시키는 자연수 \(k\) 가 존재하지 않는다.
+
+(ii) \(a_{2} \geq k\) 인 경우
+
+\(k \times a_{2}=210\) 이고 \(a_{2} \geq k>12\) 를 만족시키는
+
+두 자연수 \(k, a_{2}\) 는 \(k=14, a_{2}=15\) 이다.
+
+(i), (ii)에 의하여 \(a_{2}=15\) 이므로
+
+\(a_{1}+a_{2}=12+15=27\)
+
+\begin{enumerate}
+  \setcounter{enumi}{15}
+  \item 로그의 진수의 조건에 의하여
+\end{enumerate}
+
+\(x+1>0\) 이고 \(3 x+7>0\)
+
+곧, \(x>-1\)
+
+\(\log _{2}(x+1)=\log _{4}(3 x+7)\) 에서
+
+\(\log _{4}(x+1)^{2}=\log _{4}(3 x+7)\)
+
+\((x+1)^{2}=3 x+7\)
+
+\(x^{2}-x-6=0\)
+
+\((x+2)(x-3)=0\)
+
+\(x>-1\) 이므로 \(x=3\)
+
+\begin{enumerate}
+  \setcounter{enumi}{16}
+  \item \(f^{\prime}(x)=x^{3}-12 x-5\) 에서
+\end{enumerate}
+
+\(f(x)=\int\left(x^{3}-12 x-5\right) d x\)
+
+\[
+=\frac{1}{4} x^{4}-6 x^{2}-5 x+C \quad(C \text { 는 적분상수 })
+\]
+
+\(f(2)=3\) 이므로
+
+\(3=\frac{1}{4} \times 16-6 \times 4-5 \times 2+C\)
+
+에서 \(C=33\)
+
+따라서 \(f(0)=C=33\)
+
+\begin{enumerate}
+  \setcounter{enumi}{17}
+  \item \(f(x)=-2 x^{3}+9 x^{2}-12 x\) 에서
+\end{enumerate}
+
+\(f^{\prime}(x)=-6 x^{2}+18 x-12=-6(x-1)(x-2)\)
+
+이므로 \(f^{\prime}(x)=0\) 에서
+
+\(x=1\) 또는 \(x=2\)
+
+곧, \(\alpha=1, \beta=2\) 이고
+
+\(f(\alpha)=f(1)=-2+9-12=-5\)
+
+\(f(\beta)=f(2)=-16+36-24=-4\)
+
+이므로 두 점 \((1,-5),(2,-4)\) 를 지나는
+
+직선의 방정식은
+
+\(y-(-5)=\frac{-4-(-5)}{2-1}(x-1)\)
+
+곧, \(y=x-6\)
+
+따라서 이 직선의 \(x\) 절편은 6 이다\\
+19. \(\sum_{k=1}^{6} k\left(2 a_{k}-a_{k+1}\right)\)
+
+\(=\left(2 a_{1}-a_{2}\right)+2\left(2 a_{2}-a_{3}\right)+3\left(2 a_{3}-a_{4}\right)\)
+
+\[
++\cdots+6\left(2 a_{6}-a_{7}\right)
+\]
+
+\(=\left(2 a_{1}+3 a_{2}+4 a_{3}+\cdots+7 a_{6}\right)-6 a_{7}\)
+
+\(=\sum_{k=1}^{6}(k+1) a_{k}-60 \quad\left(\because a_{7}=10\right)\)
+
+\(=26\)
+
+따라서 \(\sum_{k=1}^{6}(k+1) a_{k}=86\)
+
+\begin{enumerate}
+  \setcounter{enumi}{19}
+  \item \(f(0)=f(1)\) 이므로 조건 (가)에 의하여
+\end{enumerate}
+
+\(f(0)=f(1)=f(3)=f(4)\)
+
+따라서
+
+\(f(x)=a x(x-1)(x-3)(x-4)+b\)
+
+( \(a, b\) 는 상수, \(a>0\) )
+
+으로 놓을 수 있다.
+
+한편, 조건 (나)에서 \(\lim _{x \rightarrow 2+} \frac{\sqrt{|f(x)|}}{x-2}\) 의 값이 존재하고
+
+\(x \rightarrow 2+\) 일 때 (분모) \(\rightarrow 0\) 이므로 (분자) \(\rightarrow 0\) 이다.
+
+따라서 \(f(2)=0\) 이다.
+
+\(f(2)=4 a+b=0\) 에서 \(b=-4 a\) 이므로
+
+\(f(x)=a x(x-1)(x-3)(x-4)-4 a\)
+
+\[
+=a(x-2)^{2}\left(x^{2}-4 x-1\right)
+\]
+
+따라서
+
+\(\lim _{x \rightarrow 2+} \frac{\sqrt{|f(x)|}}{x-2}\)
+
+\(=\lim _{x \rightarrow 2+} \frac{\sqrt{\left|a(x-2)^{2}\left(x^{2}-4 x-1\right)\right|}}{x-2}\)
+
+\(=\lim _{x \rightarrow 2+} \frac{|x-2| \sqrt{\left|a\left(x^{2}-4 x-1\right)\right|}}{x-2}\)
+
+\(=\lim _{x \rightarrow 2+} \sqrt{\left|a\left(x^{2}-4 x-1\right)\right|}\)
+
+\(=\sqrt{5 a} \quad(\because a>0)\),
+
+\(\lim _{x \rightarrow 2-} \frac{\sqrt{|f(x)|}}{x-2}\)
+
+\(=\lim _{x \rightarrow 2-} \frac{\sqrt{\left|a(x-2)^{2}\left(x^{2}-4 x-1\right)\right|}}{x-2}\)
+
+\(=\lim _{x \rightarrow 2-} \frac{|x-2| \sqrt{\left|a\left(x^{2}-4 x-1\right)\right|}}{x-2}\)
+
+\(=-\lim _{x \rightarrow 2-} \sqrt{\left|a\left(x^{2}-4 x-1\right)\right|}\)
+
+\(=-\sqrt{5 a} \quad(\because a>0)\)
+
+이므로 조건 (나)에서 \(-(\sqrt{5 a})^{2}=-\frac{1}{2}\), 곧 \(a=\frac{1}{10}\) 따라서 \(f(x)=\frac{1}{10}(x-2)^{2}\left(x^{2}-4 x-1\right)\) 이고
+
+\(f(7)=\frac{1}{10} \times 25 \times 20=50\)
+
+\(f(x)=a\{x(x-1)(x-3)(x-4)-4\}\)
+
+\(=a\left\{\left(x^{2}-4 x\right)\left(x^{2}-4 x+3\right)-4\right\}\)
+
+\(=a\left\{\left(x^{2}-4 x\right)^{2}+3\left(x^{2}-4 x\right)-4\right\}\)
+
+\(=a\left(x^{2}-4 x+4\right)\left(x^{2}-4 x-1\right)\)
+
+\(=a(x-2)^{2}\left(x^{2}-4 x-1\right)\)
+
+\begin{enumerate}
+  \setcounter{enumi}{20}
+  \item \(\angle \mathrm{ACB}=\theta, \overline{\mathrm{BC}}=x, \overline{\mathrm{AC}}=y\) 라 하자.
+\end{enumerate}
+
+삼각형 ABC 에서 \(\angle \mathrm{ABC}>\frac{\pi}{2}\) 이므로 \(0<\theta<\frac{\pi}{2}\) 이다. 삼각형 ABC 의 외접원은 넓이가 \(\frac{75}{16} \pi\) 이므로 반지름의 길이가 \(\frac{5 \sqrt{3}}{4}\) 이다.\\
+삼각형 ABC 에서 사인법칙에 의하여
+
+\(\frac{\overline{\mathrm{AB}}}{\sin (\angle \mathrm{ACB})}=2 \times \frac{5 \sqrt{3}}{4}\)
+
+곧, \(\frac{2 \sqrt{3}}{\sin \theta}=\frac{5 \sqrt{3}}{2}\) 에서 \(\sin \theta=\frac{4}{5}\)
+
+\(0<\theta<\frac{\pi}{2}\) 이므로 \(\cos \theta=\sqrt{1-\left(\frac{4}{5}\right)^{2}}=\frac{3}{5}\)
+
+삼각형 ABC 의 넓이가 4 이므로
+
+\(\frac{1}{2} \times x \times y \times \sin \theta=4\) 에서 \(x y=10\)
+
+삼각형 ABC 에서 코사인법칙에 의하여
+
+\(\overline{\mathrm{AB}}^{2}=\overline{\mathrm{BC}}^{2}+\overline{\mathrm{AC}}^{2}-2 \times \overline{\mathrm{BC}} \times \overline{\mathrm{AC}} \times \cos (\angle \mathrm{ACB})\)
+
+\((2 \sqrt{3})^{2}=x^{2}+y^{2}-2 \times x \times y \times \frac{3}{5}\)
+
+\(12=x^{2}+y^{2}-2 \times 10 \times \frac{3}{5}\)
+
+\(x^{2}+y^{2}=24\)
+
+따라서
+
+\((x+y)^{2}=x^{2}+y^{2}+2 x y\)
+
+\[
+=24+2 \times 10
+\]
+
+\[
+=44
+\]
+
+곧, \(x+y=2 \sqrt{11} \quad(\because x>0, y>0)\)
+
+\(\overline{\mathrm{CD}}=\overline{\mathrm{BC}}=x\) 이고 삼각형 ACD 의 둘레의 길이가
+
+\(3 \sqrt{11}\) 이므로
+
+\(\overline{\mathrm{AC}}+\overline{\mathrm{CD}}+\overline{\mathrm{AD}}=3 \sqrt{11}\) 에서
+
+\(\overline{\mathrm{AD}}=3 \sqrt{11}-(x+y)=\sqrt{11}\)
+
+삼각형 ACD 에서 코사인법칙에 의하여
+
+\(\overline{\mathrm{AD}}^{2}=\overline{\mathrm{CD}}^{2}+\overline{\mathrm{AC}}^{2}-2 \times \overline{\mathrm{CD}} \times \overline{\mathrm{AC}} \times \cos (\angle \mathrm{ACD})\)
+
+\((\sqrt{11})^{2}=x^{2}+y^{2}-2 \times x \times y \times \cos (\angle \mathrm{ACD})\)
+
+\(11=24-2 \times 10 \times \cos (\angle \mathrm{ACD})\)
+
+에서 \(\cos (\angle \mathrm{ACD})=\frac{13}{20}\)
+
+따라서 \(40 \times \cos (\angle \mathrm{ACD})=40 \times \frac{13}{20}=26\)
+
+\begin{enumerate}
+  \setcounter{enumi}{21}
+  \item \(a<b\) 인 모든 실수 \(a, b\) 에 대하여 부등식
+\end{enumerate}
+
+\(\int_{a}^{b}\{g(x)+2 x\} d x \geq 0\)
+
+이 성립하기 위한 필요충분조건은
+
+모든 실수 \(x\) 에 대하여 \(g(x)+2 x \geq 0\)
+
+따라서 (ㄱ)을 만족시키는 \(t\) 의 값의 범위가 \(-1 \leq t \leq 1\) 이다. 함수
+
+\(g(x)= \begin{cases}f(x) & (x<t) \\ f^{\prime}(t)(x-t)+f(t) & (x \geq t)\end{cases}\)
+
+에 대하여 (ㄱ)이 성립하기 위한 조건을 살펴보자. \(x<t\) 인 모든 실수 \(x\) 에 대하여 \(g(x)+2 x \geq 0\),
+
+곧 \(f(x) \geq-2 x\) 이고 \(f(x)\) 는 삼차함수이므로
+
+삼차함수 \(f(x)\) 의 최고차항의 계수는 음수이어야 한다.
+
+또한 \(x \geq t\) 인 모든 실수 \(x\) 에 대하여 \(g(x)+2 x \geq 0\)
+
+곧 \(f^{\prime}(t)(x-t)+f(t) \geq-2 x\) 이고
+
+\(y=f^{\prime}(t)(x-t)+f(t)\) 는 일차함수이므로
+
+\(f^{\prime}(t) \geq-2\) 이어야 한다.
+
+따라서 \(-1 \leq t \leq 1\) 인 모든 실수 \(t\) 에 대하여 \(f^{\prime}(t) \geq-2\) 이다.
+
+\begin{center}
+\includegraphics[max width=\textwidth]{2024_08_03_9fb01ff65e78f43c421fg-3}
+\end{center}
+
+\(t\) 에 대한 이차방정식 \(f^{\prime}(t)=-2\) 의 두 실근을 \(\alpha, \beta(\alpha<\beta)\) 라 하고, 곡선 \(y=f(x)\) 위의 두 점 \((\alpha, f(\alpha)),(\beta, f(\beta))\) 에서의 접선의 방정식을 각각 \(y=-2 x+p, y=-2 x+q(p, q\) 는 상수)라 하자.\\
+\(p<0\) 이면 (ㄱ)을 만족시키는 \(t\) 는 존재하지 않는다. 따라서 \(p \geq 0\) 이고, 이때 (ㄱ)이 성립하도록 하는 모든 실 수 \(t\) 의 값의 범위는 \(\alpha \leq t \leq \beta\) 이다.
+
+\begin{center}
+\includegraphics[max width=\textwidth]{2024_08_03_9fb01ff65e78f43c421fg-4}
+\end{center}
+
+따라서 \(\alpha=-1, \beta=1\) 이므로 음의 상수 \(k\) 에 대하여 \(f^{\prime}(x)=k(x+1)(x-1)-2\) 라 하면 \(f(x)=\frac{k}{3} x^{3}-(k+2) x+C \quad(C\) 는 적분상수 \()\) 이때 \(f(-1)=\frac{2}{3} k+2+C \geq 2\) 이어야 하므로 \(\frac{2}{3} k+C \geq 0\)
+
+또한 \(\int_{0}^{2} f(x) d x=6\) 이므로
+
+\(\int_{0}^{2} f(x) d x=\int_{0}^{2}\left\{\frac{k}{3} x^{3}-(k+2) x+C\right\} d x\) \(=\left[\frac{k}{12} x^{4}-\frac{k+2}{2} x^{2}+C x\right]_{0}^{2}\) \(=-\frac{2}{3} k-4+2 C\)
+
+에서 \(-\frac{2}{3} k-4+2 C=6\), 곧 \(C=\frac{k}{3}+5\)
+
+(ㄷ)을 (ㄴ)에 대입하면 \(k+5 \geq 0\), 곧 \(k \geq-5\)
+
+\(\int_{-2}^{2} f(x) d x=\left[\frac{k}{12} x^{4}-\frac{k+2}{2} x^{2}+\left(\frac{k}{3}+5\right) x\right]_{-2}^{2}\)
+
+\[
+=\frac{4 k}{3}+20
+\]
+
+이므로 \(\int_{-2}^{2} f(x) d x\) 의 최솟값은
+
+\(\frac{4}{3} \times(-5)+20=\frac{40}{3}\)
+
+따라서 \(m=\frac{40}{3}\) 이므로 \(3 m=40\)
+
+\section*{수학 영역}
+\section*{확률과 통계}
+\begin{verbatim}
+|23
+\end{verbatim}
+
+\section*{해설}
+\begin{enumerate}
+  \setcounter{enumi}{22}
+  \item \(\left(3 x^{3}+\frac{1}{x}\right)^{6}\) 의 전개식의 일반항은
+\end{enumerate}
+
+\[
+{ }_{6} \mathrm{C}_{r} \cdot\left(3 x^{3}\right)^{6-r}\left(\frac{1}{x}\right)^{r}={ }_{6} \mathrm{C}_{r} 3^{6-r} x^{18-4 r}
+\]
+
+\((r=0,1,2, \cdots, 6)\)
+
+따라서 \(x^{2}\) 의 계수는 \(r=4\) 일 때
+
+\({ }_{6} \mathrm{C}_{4} \times 3^{2}=135\)
+
+\begin{enumerate}
+  \setcounter{enumi}{23}
+  \item \(2 \mathrm{P}(A \cap B)=\frac{1}{3}\) 에서 \(\mathrm{P}(A \cap B)=\frac{1}{6}\)
+\end{enumerate}
+
+두 사건 \(A, B\) 가 서로 독립이므로
+
+\(\mathrm{P}(A \cap B)=\mathrm{P}(A) \mathrm{P}(B)=\frac{1}{3} \mathrm{P}(B)=\frac{1}{6}\)
+
+곧, \(\mathrm{P}(B)=\frac{1}{2}\)
+
+\(\mathrm{P}(A \cup B)=\mathrm{P}(A)+\mathrm{P}(B)-\mathrm{P}(A \cap B)\)
+
+\[
+\begin{aligned}
+& =\frac{1}{3}+\frac{1}{2}-\frac{1}{6} \\
+& =\frac{2}{3}
+\end{aligned}
+\]
+
+\begin{enumerate}
+  \setcounter{enumi}{24}
+  \item 8 개의 문자 \(a, a, a, a, b, b, b, c\) 를 일렬로 나열 할 때, 양 끝에 같은 문자가 나오는 경우는
+\end{enumerate}
+
+양 끝에 모두 문자 \(a\) 가 나오는 경우와
+
+양 끝에 모두 문자 \(b\) 가 나오는 경우가 있다.
+
+양 끝에 모두 문자 \(a\) 가 나오도록 나열하는 경우의 수는 6 개의 문자 \(a, a, b, b, b, c\) 를 일렬로 나열하는 경우 의 수와 같으므로 \(\frac{6!}{2!\times 3!}=60\)
+
+양 끝에 모두 문자 \(b\) 가 나오도록 나열하는 경우의 수는 6 개의 문자 \(a, a, a, a, b, c\) 를 일렬로 나열하는 경우 의 수와 같으므로 \(\frac{6!}{4!}=30\)
+
+따라서 구하는 경우의 수는 \(60+30=90\)
+
+\begin{enumerate}
+  \setcounter{enumi}{25}
+  \item 두 주머니 \(\mathrm{A}, \mathrm{B}\) 에서 각각 공을 임의로 한 개씩 꺼낼 때, 꺼낸 두 개의 공에 적힌 수가 같은 사건을 \(X\), 꺼낸 두 개의 공에 적힌 수의 곱이 짝수인 사건을 \(Y\) 라 하면 구하는 확률은 \(\mathrm{P}(X \cup Y)\) 이다.
+\end{enumerate}
+
+사건 \(X^{C} \cap Y^{C}\) 은 꺼낸 두 개의 공에 적힌 수가 다르고 곱이 홀수인 사건이므로
+
+주머니 A 에서 1 이 적혀 있는 공을 꺼내고 주머니 B 에서 3 이 적혀 있는 공을 꺼내는 경우, 주머니 A 에서 1 이 적혀 있는 공을 꺼내고 주머니 B 에서 5 가 적혀 있는 공을 꺼내는 경우 주머니 A 에서 3 이 적혀 있는 공을 꺼내고 주머니 B 에서 5 가 적혀 있는 공을 꺼내는 경우 뿐이다.
+
+따라서
+
+\(\mathrm{P}\left(X^{C} \cap Y^{C}\right)=\frac{1}{4} \times \frac{1}{5} \times 3=\frac{3}{20}\)
+
+이므로 구하는 확률은
+
+\(\mathrm{P}(X \cup Y)=1-\mathrm{P}\left(X^{C} \cap Y^{C}\right)=1-\frac{3}{20}=\frac{17}{20}\)\\
+27. \(f(t)=\mathrm{P}(t \leq X \leq t+\sigma)\) 에서
+
+\((t+\sigma)-t\) 의 값이 \(\sigma\) 로 일정하고
+
+함수 \(f(t)\) 가 \(t=10\) 일 때 최댓값을 가지므로 정규분포의 확률밀도함수의 그래프의 성질에 의하여 \(\frac{10+(10+\sigma)}{2}=m\)
+
+\(g(t)=\mathrm{P}(t-6 \leq X \leq t+2 \sigma)\) 에서
+
+\((t+2 \sigma)-(t-6)\) 의 값이 \(2 \sigma+6\) 으로 일정하고
+
+함수 \(g(t)\) 가 \(t=10\) 일 때 최댓값을 가지므로 정규분포의 확률밀도함수의 그래프의 성질에 의하여
+
+\(\frac{(10-6)+(10+2 \sigma)}{2}=m\)
+
+\section*{(ㄱ), (ㄴ)을 연립하여 풀면}
+\(\sigma=6, m=13\)
+
+따라서 확률변수 \(X\) 는 정규분포 \(\mathrm{N}\left(13,6^{2}\right)\) 을 따른다. \(Z=\frac{X-13}{6}\) 이라 하면 확률변수 \(Z\) 는 표준정규분포
+
+\(\mathrm{N}(0,1)\) 을 따르므로
+
+\(f(10)+g(10)\)
+
+\(=\mathrm{P}(10 \leq X \leq 16)+\mathrm{P}(4 \leq X \leq 22)\)
+
+\(=\mathrm{P}(-0.5 \leq Z \leq 0.5)+\mathrm{P}(-1.5 \leq Z \leq 1.5)\)
+
+\(=2 \times \mathrm{P}(0 \leq Z \leq 0.5)+2 \times \mathrm{P}(0 \leq Z \leq 1.5)\)
+
+\(=2 \times 0.1915+2 \times 0.4332\)
+
+\(=1.2494\)
+
+\begin{enumerate}
+  \setcounter{enumi}{27}
+  \item 주머니에서 임의로 한 장의 카드를 꺼낼 때, 꺼낸 카드에 적힌 수를 확률변수 \(Y\) 라 하면 \(Y\) 의 확률 분포를 표로 나타내면 다음과 같다.
+\end{enumerate}
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+\(Y\) & 1 & 2 & 3 & \(a\) & 합계 \\
+\hline
+\(\mathrm{P}(Y=y)\) & \(\frac{2}{5}\) & \(\frac{1}{5}\) & \(\frac{1}{5}\) & \(\frac{1}{5}\) & 1 \\
+\hline
+\end{tabular}
+\end{center}
+
+따라서 모평균과 모분산은 각각
+
+\(\mathrm{E}(Y)=\frac{7+a}{5}\)
+
+\(\mathrm{V}(Y)=\mathrm{E}\left(Y^{2}\right)-\{\mathrm{E}(Y)\}^{2}=\frac{15+a^{2}}{5}-\left(\frac{7+a}{5}\right)^{2}\)
+
+모집단에서 크기가 4 인 표본을 임의추출하여 구한 표본 평균을 \(\bar{Y}\) 라 하면
+
+\(\mathrm{E}(\bar{Y})=\mathrm{E}(Y)=\frac{7+a}{5}\)
+
+이때 \(X=4 \bar{Y}\) 이므로
+
+\(\mathrm{E}(X)=\mathrm{E}(4 \bar{Y})\)
+
+\[
+=4 \mathrm{E}(\bar{Y})
+\]
+
+\[
+\begin{aligned}
+& =4 \times \frac{7+a}{5} \\
+& =12
+\end{aligned}
+\]
+
+에서 \(a=8\)
+
+따라서
+
+\(\mathrm{V}(Y)=\frac{15+64}{5}-\left(\frac{7+8}{5}\right)^{2}=\frac{34}{5}\)
+
+에서 \(\mathrm{V}(\bar{Y})=\frac{\mathrm{V}(Y)}{4}=\frac{17}{10}\) 이므로
+
+\(\mathrm{V}(X)=\mathrm{V}(4 \bar{Y})=16 \mathrm{~V}(\bar{Y})=16 \times \frac{17}{10}=\frac{136}{5}\)
+
+\begin{enumerate}
+  \setcounter{enumi}{28}
+  \item 동전의 앞면이 나온 횟수가 뒷면이 나온 휫수보다 큰 사건을 \(A\), 한 개의 동전을 4 번 던지는 사건을 \(B\) 라 하 면 \(p=\mathrm{P}(B \mid A)=\frac{\mathrm{P}(A \cap B)}{\mathrm{P}(A)}\) 이다.
+\end{enumerate}
+
+( i ) 사건 \(A \cap B\) 가 일어날 확률
+
+주사위를 던져서 나온 눈의 수가 3 의 배수이고
+
+한 개의 동전을 4 번 던져서 동전의 앞면이 나온 횟수 가 4 또는 3 이어야 하므로
+
+\[
+\mathrm{P}(A \cap B)=\frac{1}{3} \times\left\{{ }_{4} \mathrm{C}_{4}\left(\frac{1}{2}\right)^{4}+{ }_{4} \mathrm{C}_{3}\left(\frac{1}{2}\right)^{3}\left(\frac{1}{2}\right)\right\}
+\]
+
+\[
+=\frac{5}{48}
+\]
+
+(ii) 사건 \(A \cap B^{C}\) 이 일어날 확률
+
+주사위를 던져서 나온 눈의 수가 3 의 배수가 아니고 한 개의 동전을 2 번 던져서 동전의 앞면이 나온 횟수 가 2 이어야 하므로
+
+\[
+\begin{aligned}
+\mathrm{P}\left(A \cap B^{C}\right) & =\frac{2}{3} \times\left(\frac{1}{2}\right)^{2} \\
+& =\frac{1}{6}
+\end{aligned}
+\]
+
+(i), (ii)에 의하여
+
+\(\mathrm{P}(A)=\mathrm{P}(A \cap B)+\mathrm{P}\left(A \cap B^{C}\right)=\frac{13}{48}\) 이므로
+
+\(p=\frac{\mathrm{P}(A \cap B)}{\mathrm{P}(A)}=\frac{\frac{5}{48}}{\frac{13}{48}}=\frac{5}{13}\)
+
+따라서 \(65 p=65 \times \frac{5}{13}=25\)
+
+\begin{enumerate}
+  \setcounter{enumi}{29}
+  \item 6 명의 학생을 A, B, C, D, E, F 라 하고 6 명의 학생 \(\mathrm{A}, \mathrm{B}, \mathrm{C}, \mathrm{D}, \mathrm{E}, \mathrm{F}\) 가 받는 볼펜의 개수를 각각 \(x_{1}, x_{2}, x_{3}, x_{4}, x_{5}, x_{6}\) 이라 하면 \(x_{1}+x_{2}+x_{3}+x_{4}+x_{5}+x_{6}=13\)
+\end{enumerate}
+
+이때 조건 (가)에 의하여
+
+\(y_{n}=x_{n}-1(n=1,2,3,4,5,6)\) 이라 하면 \(y_{n}\) 은 음이 아닌 정수이고 (ㄱ)에서
+
+\(y_{1}+y_{2}+y_{3}+y_{4}+y_{5}+y_{6}=7\)
+
+조건 (나)에 의하여 \(y_{1}, y_{2}, y_{3}\) 중에서 최댓값과 최솟 값의 차가 1 이므로 \(y_{1}, y_{2}, y_{3}\) 중 최대인 수의 개수는 1 이거나 2 이다.
+
+( i) \(y_{1}, y_{2}, y_{3}\) 중 최대인 수의 개수가 1 인 경우 \(y_{1}, y_{2}, y_{3}\) 중 최대인 수를 정하는 경우의 수는 \({ }_{3} \mathrm{C}_{1}=3\) 이다.
+
+만약 \(y_{1}=y_{3}+1, y_{2}=y_{3}\) 이라 하면 (ㄴ)에서 \(3 y_{3}+y_{4}+y_{5}+y_{6}=6\)
+
+이고, 이를 만족시키는 순서쌍 \(\left(y_{3}, y_{4}, y_{5}, y_{6}\right)\) 의 개수는
+
+\(y_{3}=0\) 일 때 \({ }_{3} \mathrm{H}_{6}={ }_{8} \mathrm{C}_{6}=28\)
+
+\(y_{3}=1\) 일 때 \({ }_{3} \mathrm{H}_{3}={ }_{5} \mathrm{C}_{3}=10\)
+
+\(y_{3}=2\) 일 때 \({ }_{3} \mathrm{H}_{0}={ }_{2} \mathrm{C}_{0}=1\)
+
+에서 \(28+10+1=39\) 이다.
+
+따라서 이 경우의 수는 \(3 \times 39=117\)
+
+(ii) \(y_{1}, y_{2}, y_{3}\) 중 최대인 수의 개수가 2 인 경우 \(y_{1}, y_{2}, y_{3}\) 중 최대인 수를 정하는 경우의 수는 \({ }_{3} \mathrm{C}_{2}=3\) 이다.
+
+만약 \(y_{1}=y_{3}+1, y_{2}=y_{3}+1\) 이라 하면.(ㄴ)에서
+
+\(3 y_{3}+y_{4}+y_{5}+y_{6}=5\)
+
+이고, 이를 만족시키는 순서쌍 \(\left(y_{3}, y_{4}, y_{5}, y_{6}\right)\) 의 개수는
+
+\(y_{3}=0\) 일 때 \({ }_{3} \mathrm{H}_{5}={ }_{7} \mathrm{C}_{5}=21\)
+
+\(y_{3}=1\) 일 때 \({ }_{3} \mathrm{H}_{2}={ }_{4} \mathrm{C}_{2}=6\)
+
+에서 \(21+6=27\) 이다.
+
+따라서 이 경우의 수는 \(3 \times 27=81\)
+
+(i), (ii)에 의하여 구하는 경우의 수는 \(117+81=198\)
+
+\section*{수학 영역}
+미적분
+
+\begin{center}
+\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|}
+\hline
+23 & \((3)\) & 24 & \((1)\) & 25 & \((2)\) & 26 & \((5)\) & 27 & (1) \\
+\hline
+28 & \((2)\) & 29 & 21 & 30 & 35 &  &  &  &  \\
+\hline
+\end{tabular}
+\end{center}
+
+해설
+
+\begin{enumerate}
+  \setcounter{enumi}{22}
+  \item \(\lim _{n \rightarrow \infty}\left(\frac{n^{2}}{n+1}-\frac{n^{2}+1}{n+4}\right)\)
+\end{enumerate}
+
+\(=\lim _{n \rightarrow \infty} \frac{n^{2}(n+4)-\left(n^{2}+1\right)(n+1)}{(n+1)(n+4)}\)
+
+\(=\lim _{n \rightarrow \infty} \frac{3 n^{2}-n-1}{n^{2}+5 n+4}\)
+
+\(=\lim _{n \rightarrow \infty} \frac{3-\frac{1}{n}-\frac{1}{n^{2}}}{1+\frac{5}{n}+\frac{4}{n^{2}}}\)
+
+\(=3\)
+
+\begin{enumerate}
+  \setcounter{enumi}{23}
+  \item 곡선 \(y=x \sin \left(x^{2}\right)(0 \leq x \leq \sqrt{\pi})\) 가 \(x\) 축과 만나 는 점의 \(x\) 좌표는
+\end{enumerate}
+
+\(x \sin \left(x^{2}\right)=0\) 에서
+
+\(x=0\) 또는 \(x=\sqrt{\pi} \quad(\because 0 \leq x \leq \sqrt{\pi})\)
+
+\(0 \leq x \leq \sqrt{\pi}\) 일 때, \(x \sin \left(x^{2}\right) \geq 0\) 이므로 구하는 넓이는
+
+\(\int_{0}^{\sqrt{\pi}} x \sin \left(x^{2}\right) d x\)
+
+\(x^{2}=t\) 로 치환하면 \(\frac{d t}{d x}=2 x\) 이고,
+
+\(x=0\) 일 때 \(t=0, x=\sqrt{\pi}\) 일 때 \(t=\pi\) 이므로
+
+\(\int_{0}^{\sqrt{\pi}} x \sin \left(x^{2}\right) d x=\int_{0}^{\pi} \frac{1}{2} \sin t d t\)
+
+\[
+\begin{aligned}
+& =\left[-\frac{1}{2} \cos t\right]_{0}^{\pi} \\
+& =\frac{1}{2}-\left(-\frac{1}{2}\right) \\
+& =1
+\end{aligned}
+\]
+
+\begin{enumerate}
+  \setcounter{enumi}{24}
+  \item 두 곡선 \(y=\ln x, y=\ln (x-2)+1\) 에 모두 접하는 직선을 \(l\) 이라 하고, 직선 \(l\) 이 두 곡선 \(y=\ln x\), \(y=\ln (x-2)+1\) 과 접하는 점을 각각 \(\mathrm{A}(a, \ln a)\), \(\mathrm{B}(b, \ln (b-2)+1)\) 이라 하자.
+\end{enumerate}
+
+직선 \(l\) 은 두 점 \(\mathrm{A}, \mathrm{B}\) 를 지나는 직선이므로
+
+직선 \(l\) 의 기울기는 \(\frac{\ln (b-2)+1-\ln a}{b-a}\)
+
+또한 \((\ln x)^{\prime}=\frac{1}{x},\{\ln (x-2)+1\}^{\prime}=\frac{1}{x-2}\) 에서
+
+직선 \(l\) 의 기울기는 \(\frac{1}{a}=\frac{1}{b-2}\)
+
+\(b=a+2\) 이므로 (ㄱ)에 대입하면
+
+\(\frac{\ln (a+2-2)+1-\ln a}{a+2-a}=\frac{1}{2}\)
+
+(ㄱ), (ㄴ)에 의하여 \(a=2\) 이고 \(b=4\)
+
+따라서 직선 \(l\) 의 방정식은 \(y=\frac{1}{2}(x-2)+\ln 2\) 이고 \(y\) 절편은 \(\ln 2-1\)
+
+\begin{enumerate}
+  \setcounter{enumi}{25}
+  \item \(\frac{d x}{d t}=1-\cos t, \frac{d y}{d t}=\cos t-t \sin t\) 이므로
+\end{enumerate}
+
+\[
+f(a)=\int_{0}^{a} \sqrt{\left(\frac{d x}{d t}\right)^{2}+\left(\frac{d y}{d t}\right)^{2}} d t
+\]
+
+\[
+=\int_{0}^{a} \sqrt{(1-\cos t)^{2}+(\cos t-t \sin t)^{2}} d t
+\]
+
+에서
+
+\(f^{\prime}(a)=\sqrt{(1-\cos a)^{2}+(\cos a-a \sin a)^{2}}\) 따라서
+
+\(f^{\prime}(\pi)=\sqrt{(1-\cos \pi)^{2}+(\cos \pi-\pi \sin \pi)^{2}}\)
+
+\[
+=\sqrt{2^{2}+(-1)^{2}}
+\]
+
+\[
+=\sqrt{5}
+\]
+
+\begin{enumerate}
+  \setcounter{enumi}{26}
+  \item 두 직선 \(y=a x, y=-b x\) 가 \(x\) 축과 이루는 예각의 크기를 각각 \(\alpha, \beta\left(0<\alpha<\frac{\pi}{2}, 0<\beta<\frac{\pi}{2}\right)\) 라 하면 \(\tan \alpha=a, \tan \beta=b\)
+\end{enumerate}
+
+\begin{center}
+\includegraphics[max width=\textwidth]{2024_08_03_9fb01ff65e78f43c421fg-6(1)}
+\end{center}
+
+\(a \times b=\frac{1}{8}\) 에서 \(\tan \beta=b=\frac{1}{8 a}\) 이고,
+
+\(\tan \left(\frac{\pi}{2}-\alpha\right)=\frac{1}{\tan \alpha}=\frac{1}{a}>\tan \beta\) 이므로
+
+\(\frac{\pi}{2}-\alpha>\beta\), 곧 \(0<\alpha+\beta<\frac{\pi}{2}\)
+
+삼각형 OPQ 에서 사인법칙에 의하여
+
+\(\frac{\overline{\mathrm{PQ}}}{\sin (\alpha+\beta)}=5\), 곧 \(\sin (\alpha+\beta)=\frac{4}{5}(\because \overline{\mathrm{PQ}}=4)\)
+
+\(0<\alpha+\beta<\frac{\pi}{2}\) 이므로
+
+\(\cos (\alpha+\beta)=\sqrt{1-\left(\frac{4}{5}\right)^{2}}=\frac{3}{5}\) 에서 \(\tan (\alpha+\beta)=\frac{4}{3}\) (ㄱ)에서
+
+\(\tan (\alpha+\beta)=\frac{\tan \alpha+\tan \beta}{1-\tan \alpha \tan \beta}\)
+
+\[
+\begin{aligned}
+& =\frac{a+b}{1-a \times b} \\
+& =\frac{8}{7}(a+b) \quad\left(\because a \times b=\frac{1}{8}\right) \\
+& =\frac{4}{3}
+\end{aligned}
+\]
+
+이므로 \(a+b=\frac{7}{6}\)
+
+\begin{enumerate}
+  \setcounter{enumi}{27}
+  \item \(g(x)=\int_{3}^{x} e^{t^{2}-2 t} d t\) 라 하면
+\end{enumerate}
+
+\(g(3)=0, g^{\prime}(x)=e^{x^{2}-2 x}\)
+
+또한, \(4 x f(2 x)=x f(x)+4 g(x)\) 에서
+
+\(4 x f(2 x)-x f(x)=4 g(x)\)
+
+이때 \(x f(x)\) 의 한 부정적분을 \(F(x)\) 라 하면
+
+\(\frac{d}{d x} F(2 x)=2 F^{\prime}(2 x)=2 \times 2 x f(2 x)=4 x f(2 x)\)
+
+이므로
+
+\(\frac{d}{d x} F(2 x)-\frac{d}{d x} F(x)=4 g(x)\) 에서
+
+\(F(2 x)-F(x)=4 \int g(x) d x\)
+
+이고,
+
+\[
+\begin{aligned}
+& F(2)-F(1)=\int_{1}^{2} x f(x) d x \\
+& =2 e^{3} \\
+& =(x-1) g(x)-\int(x-1) g^{\prime}(x) d x \\
+& =(x-1) g(x)-\frac{1}{2} \int 2(x-1) e^{x^{2}-2 x} d x \\
+& =(x-1) g(x)-\frac{1}{2} e^{x^{2}-2 x}+C
+\end{aligned}
+\]
+
+\begin{center}
+\includegraphics[max width=\textwidth]{2024_08_03_9fb01ff65e78f43c421fg-6}
+\end{center}
+
+\begin{center}
+\includegraphics[max width=\textwidth]{2024_08_03_9fb01ff65e78f43c421fg-6(2)}
+\end{center}
+
+( \(C\) 는 적분상수)
+
+이므로 (ㄱ)에서
+
+\(F(2 x)-F(x)=4\left\{(x-1) g(x)-\frac{1}{2} e^{x^{2}-2 x}\right\}+4 C\) \(x=1\) 을 대입하면
+
+\(F(2)-F(1)=-\frac{2}{e}+4 C\)
+
+\[
+=2 e^{3} \quad(\because \text { (ㄴ) }
+\]
+
+이므로 \(4 C=\frac{2}{e}+2 e^{3}\), 곧
+
+\(F(2 x)-F(x)=4\left\{(x-1) g(x)-\frac{1}{2} e^{x^{2}-2 x}\right\}+\frac{2}{e}+2 e^{3}\) \(x=3\) 을 대입하면
+
+\[
+\begin{aligned}
+F(6)-F(3) & =4\left\{2 g(3)-\frac{1}{2} e^{3}\right\}+\frac{2}{e}+2 e^{3} \\
+& =-2 e^{3}+\frac{2}{e}+2 e^{3} \quad(\because g(3)=0) \\
+& =\frac{2}{e}
+\end{aligned}
+\]
+
+따라서 \(\int_{3}^{6} x f(x) d x=F(6)-F(3)=\frac{2}{e}\)
+
+\begin{enumerate}
+  \setcounter{enumi}{28}
+  \item \(f(x)=a x+b(a, b\) 는 상수, \(a \neq 0)\) 이라 하면 \(f(0)=b>0\) 이고
+\end{enumerate}
+
+함수 \(g(x)\) 가 실수 전체의 집합에서 정의되므로
+
+\(g(0)=\lim _{t \rightarrow 0}\{f(0)\}^{-\frac{1}{t}}=\lim _{t \rightarrow 0}\left(b^{-\frac{1}{t}}\right)\) 의 값이 존재한다.
+
+\(0<b<1\) 이면 \(\frac{1}{b}>1\) 이고
+
+\(t \rightarrow 0+\) 일 때 \(\frac{1}{t} \rightarrow \infty\) 이므로
+
+\(\lim _{t \rightarrow 0+}\left(b^{-\frac{1}{t}}\right)=\lim _{t \rightarrow 0+}\left(\frac{1}{b}\right)^{\frac{1}{t}}\) 의 값이 존재하지 않는다.
+
+따라서 \(b \geq 1\)
+
+이때 \(b>1\) 이면 \(t \rightarrow 0\) - 일 때 \(-\frac{1}{t} \rightarrow \infty\) 이므로
+
+\(\lim _{t \rightarrow 0-}\left(b^{-\frac{1}{t}}\right)\) 의 값이 존재하지 않는다.
+
+따라서 \(b=1\) 이고 \(g(0)=\lim _{t \rightarrow 0}\left(1-\frac{1}{t}\right)=1\)
+
+\(f(x)=a x+1\) 에서 \(f(t x)=a(t x)+1\) 이므로 \(x \neq 0\) 일 때,
+
+\[
+\begin{aligned}
+g(x) & =\lim _{t \rightarrow 0}(1+a x t)^{-\frac{1}{t}} \\
+& =\lim _{t \rightarrow 0}\left\{(1+a x t)^{\frac{1}{a x t}}\right\}^{-a x} \\
+& =e^{-a x}
+\end{aligned}
+\]
+
+또한 \(e^{0}=1\) 이고 \(g(0)=1\) 이므로
+
+모든 실수 \(x\) 에 대하여 \(g(x)=e^{-a x}\) 이다. \(g(-1)=e^{2}\) 이므로 \(e^{a}=e^{2}\) 에서 \(a=2\) 따라서 \(f(x)=2 x+1\) 이고 \(f(10)=21\)
+
+\begin{verbatim}
+30. 만약 \(b_{1}<a_{1}\) 이면
+    \(c_{1}=b_{1}=8, b_{1}=4 a_{1}\) 에서 \(a_{1}=2\) 이므로
+    \(a_{1}<b_{1}\) 이 되어 모순이다.
+    만약 \(b_{1}=a_{1}\) 이면
+    \(c_{1}=1\) 이므로 조건을 만족시키지 않는다.
+    따라서 \(a_{1}<b_{1}\) 이고
+    \(c_{1}=a_{1}=8\)
+    \(b_{1}=4 a_{1}=32\)
+    두 등비수열 \(\left\{a_{n}\right\},\left\{b_{n}\right\}\) 의 공비를 각각 \(r_{a}, r_{b}\) 라 하자.
+    \(b_{3}=8\) 에서 \(32 \times\left(r_{b}\right)^{2}=8\) 이므로
+    \(\left(r_{b}\right)^{2}=\frac{1}{4}\)
+\end{verbatim}
+
+\(b_{5}=b_{3} \times\left(r_{b}\right)^{2}=8 \times \frac{1}{4}=2\)
+
+\(c_{5}<b_{5}\) 이고
+
+\(a_{n} \leq c_{n}\) 인 자연수 \(n\) 의 값은 1 과 3 뿐이므로 \(c_{5}<a_{5}\) 이다.
+
+곧, \(c_{5}<b_{5}\) 이고 \(c_{5}<a_{5}\) 이므로
+
+\(c_{5}=1\) 이고 \(a_{5}=b_{5}=2\) 이다.
+
+\(a_{5}=a_{1} \times\left(r_{a}\right)^{4}=8 \times\left(r_{a}\right)^{4}=2\) 이므로
+
+\(\left(r_{a}\right)^{2}=\frac{1}{2}\)
+
+만약 (ㄱ)에서 \(r_{b}=\frac{1}{2}\) 이면
+
+\(b_{2}=32 \times \frac{1}{2}=16>8 \times \frac{1}{\sqrt{2}}=\left|a_{2}\right|\) 이므로
+
+\(b_{2}>a_{2}\), 곧 \(c_{2}=a_{2}\) 이다
+
+이는 (ㄴ)을 만족시키지 않으므로 \(r_{b}=-\frac{1}{2}\) 이다.
+
+만약 (ㄷ)에서 \(r_{a}=-\frac{1}{\sqrt{2}}\) 이면
+
+\(a_{6}=a_{5} \times r_{a}=2 \times\left(-\frac{1}{\sqrt{2}}\right)=-\sqrt{2}\)
+
+\(b_{6}=b_{5} \times r_{b}=2 \times\left(-\frac{1}{2}\right)=-1\)
+
+이므로 \(a_{6}<b_{6}\) 이 되어 \(c_{6}=a_{6}\) 이다.
+
+이는 (ㄴ)을 만족시키지 않으므로 \(r_{a}=\frac{1}{\sqrt{2}}\) 이다.
+
+곧 \(a_{n}=8 \times\left(\frac{1}{\sqrt{2}}\right)^{n-1}, b_{n}=32 \times\left(-\frac{1}{2}\right)^{n-1}\) 이므로
+
+두 등비수열 \(\left\{a_{n}\right\},\left\{b_{n}\right\}\) 을 첫째항부터 차례로 나열하면 다음 표와 같다.
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+\hline
+\(n\) & 1 & 2 & 3 & 4 & 5 & 6 & 7 & \(\cdots\) \\
+\hline
+\(\left\{a_{n}\right\}\) & 8 & \(4 \sqrt{2}\) & 4 & \(2 \sqrt{2}\) & 2 & \(\sqrt{2}\) & 1 & \(\cdots\) \\
+\hline
+\(\left\{b_{n}\right\}\) & 32 & -16 & 8 & -4 & 2 & -1 & \(\frac{1}{2}\) & \(\cdots\) \\
+\hline
+\end{tabular}
+\end{center}
+
+\(n \geq 6\) 이면 \(a_{n}>b_{n}\) 에서 \(c_{n}=b_{n}\) 이므로
+
+\[
+\begin{aligned}
+\sum_{n=1}^{\infty}\left|c_{n}\right| & =8+16+4+4+1+\sum_{n=6}^{\infty}\left\{32 \times\left(\frac{1}{2}\right)^{n-1}\right\} \\
+& =33+\frac{1}{1-\frac{1}{2}} \\
+& =35
+\end{aligned}
+\]
+
+\begin{center}
+\includegraphics[max width=\textwidth]{2024_08_03_9fb01ff65e78f43c421fg-7}
+\end{center}
+
+\section*{수학 영역}
+\begin{center}
+\includegraphics[max width=\textwidth]{2024_08_03_9fb01ff65e78f43c421fg-8(4)}
+\end{center}
+
+해설
+
+\begin{enumerate}
+  \setcounter{enumi}{22}
+  \item 점 \(\mathrm{A}(3,1,-2)\) 에서 \(z\) 축에 내린 수선의 발 P 의 좌표는 \(\mathrm{P}(0,0,-2)\) 이고
+\end{enumerate}
+
+점 \(\mathrm{A}(3,1,-2)\) 를 \(x y\) 평면에 대하여 대칭이동한 점 Q 의 좌표는 \(\mathrm{Q}(3,1,2)\) 이다.
+
+따라서 선분 PQ 의 길이는
+
+\(\overline{\mathrm{PQ}}=\sqrt{(3-0)^{2}+(1-0)^{2}+\{2-(-2)\}^{2}}=\sqrt{26}\)
+
+\begin{enumerate}
+  \setcounter{enumi}{23}
+  \item 타원 \(\frac{x^{2}}{16}+\frac{y^{2}}{12}=1\) 의 두 초점의 좌표는
+\end{enumerate}
+
+\((2,0),(-2,0)\) 이므로 \(\overline{\mathrm{FF}^{\prime}}=4\)
+
+또한 타원의 정의에 의하여
+
+\(\overline{\mathrm{FA}}+\overline{\mathrm{AF}^{\prime}}=2 \times 4=8\)
+
+따라서 삼각형 \(\mathrm{AFF}^{\prime}\) 의 둘레의 길이는
+
+\(\overline{\mathrm{FF}^{\prime}}+\left(\overline{\mathrm{FA}}+\overline{\mathrm{AF}^{\prime}}\right)=4+8=12\)
+
+\begin{enumerate}
+  \setcounter{enumi}{24}
+  \item 포물선 \(y^{2}=6 x\) 의 초점 F 의 좌표는 \(\mathrm{F}\left(\frac{3}{2}, 0\right)\) 이고, 준선의 방정식은 \(x=-\frac{3}{2}\) 이다.
+\end{enumerate}
+
+제 1 사분면에 있는 포물선 위의 점 P 에서 준선에 내린 수선의 발을 H 라 하면 포물선의 정의에 의하여
+
+\(\overline{\mathrm{PH}}=\overline{\mathrm{PF}}=15\)
+
+\begin{center}
+\includegraphics[max width=\textwidth]{2024_08_03_9fb01ff65e78f43c421fg-8(3)}
+\end{center}
+
+점 P 의 좌표를 \(\mathrm{P}(s, t)(s>0, t>0)\) 이라 하면
+
+\(\overline{\mathrm{PH}}=s-\left(-\frac{3}{2}\right)\)
+
+\[
+=s+\frac{3}{2}
+\]
+
+\(=15\)
+
+에서 \(s=\frac{27}{2}\) 이고,
+
+\(t^{2}=6 s=6 \times \frac{27}{2}=81\) 에서 \(t=9(\because t>0)\)
+
+그러므로 포물선 \(y^{2}=6 x\) 위의 점 \(\mathrm{P}\left(\frac{27}{2}, 9\right)\) 에서의 접선의 방정식은
+
+\(9 y=3\left(x+\frac{27}{2}\right)\), 곧 \(y=\frac{1}{3} x+\frac{9}{2}\)
+
+이 접선이 포물선의 준선 \(x=-\frac{3}{2}\) 과 만나는 점의 좌표는 \(\left(-\frac{3}{2}, 4\right)\) 이다.
+
+따라서 \(a=-\frac{3}{2}, b=4\) 이므로 \(a \times b=-6\)
+
+\begin{enumerate}
+  \setcounter{enumi}{25}
+  \item \(\overrightarrow{\mathrm{AB}}=\vec{a}, \overrightarrow{\mathrm{BC}}=\vec{b}\) 라 하자
+\end{enumerate}
+
+점 D 는 삼각형 ABC 의 두 중선의 교점이므로 삼각형 ABC 의 무게중심이다.\\
+따라서 선분 BC 의 중점을 L 이라 하면
+
+점 D 는 선분 AL 을 \(2: 1\) 로 내분하는 점이다. 따라서
+
+\(\overrightarrow{\mathrm{AD}}=\frac{2}{3} \overrightarrow{\mathrm{AL}}\)
+
+\[
+\begin{aligned}
+& =\frac{2}{3}(\overrightarrow{\mathrm{AB}}+\overrightarrow{\mathrm{BL}}) \\
+& =\frac{2}{3}\left(\vec{a}+\frac{1}{2} \vec{b}\right) \\
+& =\frac{2}{3} \vec{a}+\frac{1}{3} \vec{b}
+\end{aligned}
+\]
+
+또한,
+
+\(\overrightarrow{\mathrm{CM}}=\overrightarrow{\mathrm{CB}}+\overrightarrow{\mathrm{BM}}\)
+
+\[
+\begin{aligned}
+& =-\vec{b}-\frac{1}{2} \vec{a} \\
+& =-\frac{1}{2} \vec{a}-\vec{b}
+\end{aligned}
+\]
+
+그러므로
+
+\[
+\begin{aligned}
+\overrightarrow{\mathrm{AD}}+\overrightarrow{\mathrm{CM}} & =\left(\frac{2}{3} \vec{a}+\frac{1}{3} \vec{b}\right)+\left(-\frac{1}{2} \vec{a}-\vec{b}\right) \\
+& =\frac{1}{6} \vec{a}-\frac{2}{3} \vec{b} \\
+& =\frac{1}{6} \overrightarrow{\mathrm{AB}}-\frac{2}{3} \overrightarrow{\mathrm{BC}}
+\end{aligned}
+\]
+
+곧, \(m=\frac{1}{6}, n=-\frac{2}{3}\) 이므로 \(m \times n=-\frac{1}{9}\)
+
+\begin{enumerate}
+  \setcounter{enumi}{26}
+  \item 점 B 에서 선분 OA 에 내린 수선의 발을 P 라 하면 조건 (가)에 의하여
+\end{enumerate}
+
+(삼각형 OAB 의 넓이) \(=\frac{1}{2} \times \overline{\mathrm{OA}} \times \overline{\mathrm{BP}}\)
+
+\[
+\begin{aligned}
+& =\frac{1}{2} \times 6 \times \overline{\mathrm{BP}} \\
+& =6
+\end{aligned}
+\]
+
+이므로 \(\overline{\mathrm{BP}}=2\) 이고,
+
+마찬가지의 방법으로 점 C 에서 선분 OA 에 내린 수선의 발도 P 이고 \(\overline{\mathrm{CP}}=2\) 이다.
+
+따라서 두 점 \(\mathrm{B}, \mathrm{C}\) 는 밑면과 평행한 평면 위에 중심이 P 이고 반지름의 길이가 2 인 원 위에 있다.
+
+\begin{center}
+\includegraphics[max width=\textwidth]{2024_08_03_9fb01ff65e78f43c421fg-8(2)}
+\end{center}
+
+직선 AB 가 밑면과 만나는 점을 \(\mathrm{B}^{\prime}\) 이라 하면 두 직각삼각형 APB 와 \(\mathrm{AOB}^{\prime}\) 은 서로 닮음이고, 닮음비는 \(\overline{\mathrm{PB}}: \overline{\mathrm{OB}^{\prime}}=2: 3\) 이다.
+
+따라서
+
+\(\overline{\mathrm{AP}}=\frac{2}{3} \times \overline{\mathrm{OA}}=\frac{2}{3} \times 6=4\)
+
+\(\overline{\mathrm{OP}}=\overline{\mathrm{OA}}-\overline{\mathrm{AP}}=6-4=2\)
+
+점 P 에서 직선 BC 에 내린 수선의 발을 H 라 하면 삼 수선의 정리에 의하여 \(\overline{\mathrm{AH}} \perp \overline{\mathrm{BC}}\) 이다.
+
+조건 (나)에서 점 A 와 직선 BC 사이의 거리는
+
+\(\overline{\mathrm{AH}}=3 \sqrt{2}\) 이므로
+
+\(\overline{\mathrm{PH}}=\sqrt{\overline{\mathrm{AH}}^{2}-\overline{\mathrm{AP}}^{2}}\)
+
+\[
+\begin{aligned}
+& =\sqrt{(3 \sqrt{2})^{2}-4^{2}} \\
+& =\sqrt{2}
+\end{aligned}
+\]
+
+\(\overline{\mathrm{BC}}=2 \times \overline{\mathrm{BH}}\)
+
+\[
+\begin{aligned}
+& =2 \times \sqrt{\overline{\mathrm{PB}}^{2}-\overline{\mathrm{PH}}^{2}} \\
+& =2 \times \sqrt{2^{2}-(\sqrt{2})^{2}} \\
+& =2 \sqrt{2}
+\end{aligned}
+\]
+
+또한 삼수선의 정리에 의하여
+
+점 O 에서 직선 BC 에 내린 수선의 발이 H 이므로 직각삼각형 POH 에서
+
+\(\overline{\mathrm{OH}}=\sqrt{\overline{\mathrm{OP}}^{2}+\overline{\mathrm{PH}}^{2}}\)
+
+\[
+\begin{aligned}
+& =\sqrt{2^{2}+(\sqrt{2})^{2}} \\
+& =\sqrt{6}
+\end{aligned}
+\]
+
+따라서
+
+(삼각형 OBC 의 넓이) \(=\frac{1}{2} \times \overline{\mathrm{BC}} \times \overline{\mathrm{OH}}\)
+
+\[
+\begin{aligned}
+& =\frac{1}{2} \times 2 \sqrt{2} \times \sqrt{6} \\
+& =2 \sqrt{3}
+\end{aligned}
+\]
+
+\begin{enumerate}
+  \setcounter{enumi}{27}
+  \item 선분 AB 의 중점을 M , 선분 CM 의 중점을 N 이라 하면 조건 (가)에서
+\end{enumerate}
+
+\[
+\begin{aligned}
+(\overrightarrow{\mathrm{PA}}+\overrightarrow{\mathrm{PB}}+2 \overrightarrow{\mathrm{PC}}) \cdot \overrightarrow{\mathrm{PD}} & =(2 \overrightarrow{\mathrm{PM}}+2 \overrightarrow{\mathrm{PC}}) \cdot \overrightarrow{\mathrm{PD}} \\
+& =4 \overrightarrow{\mathrm{PN}} \cdot \overrightarrow{\mathrm{PD}} \\
+& \leq 0
+\end{aligned}
+\]
+
+이므로 점 P 는 선분 DN 을 지름으로 하는 원의 내부 또는 둘레 위를 움직인다.
+
+\begin{center}
+\includegraphics[max width=\textwidth]{2024_08_03_9fb01ff65e78f43c421fg-8}
+\end{center}
+
+선분 BD 의 중점을 E 라 하면
+
+점 A 에서 직선 BD 에 내린 수선의 발은 E 이다.
+
+점 P 에서 직선 BD 에 내린 수선의 발을 H 라 하면
+
+\(\overrightarrow{\mathrm{AP}} \cdot \overrightarrow{\mathrm{BD}}=\overrightarrow{\mathrm{EH}} \cdot \overrightarrow{\mathrm{BD}}\) 이므로
+
+조건 (나)에서 \(0 \leq \overrightarrow{\mathrm{EH}} \cdot \overrightarrow{\mathrm{BD}} \leq 8\)
+
+따라서 점 H 는 선분 ED 위의 점이고
+
+\(0 \leq|\overrightarrow{\mathrm{EH}}| \times|\overrightarrow{\mathrm{BD}}| \leq 8\)
+
+\(0 \leq|\overrightarrow{\mathrm{EH}}| \leq \sqrt{2} \quad(\because|\overrightarrow{\mathrm{BD}}|=4 \sqrt{2})\)
+
+따라서 선분 ED 의 중점을 F 라 하면 점 H 는
+
+선분 EF 위의 점이다.
+
+(ㄱ), (ㄴ)에 의하여 점 P 는 두 점 \(\mathrm{E}, \mathrm{F}\) 를 각각 지나고 선분 BD 와 수직인 두 직선과 원으로 둘러싸인 영역의 내부 또는 둘레 위를 움직인다.
+
+\begin{center}
+\includegraphics[max width=\textwidth]{2024_08_03_9fb01ff65e78f43c421fg-8(1)}
+\end{center}
+
+\(|\overrightarrow{\mathrm{PB}}|\) 의 값이 최대가 되려면 점 P 가 점 F 를 지나고 선분 BD 와 수직인 직선과 원이 만나는 점 중 점 C 와 가까운 점이어야 하고,
+
+\(|\overrightarrow{\mathrm{PB}}|\) 의 값이 최소가 되려면 점 P 가 점 E 이어야 한다. 점 B 를 원점으로 하고 두 직선 \(\mathrm{BC}, \mathrm{BA}\) 를 각각 \(x\) 축, \(y\) 축으로 하면 정사각형의 네 꼭짓점의 좌표는
+
+\(\mathrm{B}(0,0), \mathrm{C}(4,0), \mathrm{D}(4,4), \mathrm{A}(0,4)\) 이고 두 점 \(\mathrm{Q}, \mathrm{R}\) 을 다음 그림과 같이 좌표평면 위에 나타낼 수 있다.
+
+\section*{수학 영역}
+\begin{center}
+\includegraphics[max width=\textwidth]{2024_08_03_9fb01ff65e78f43c421fg-9(1)}
+\end{center}
+
+점 M 은 선분 AB 의 중점이므로 \(\mathrm{M}(0,2)\), 점 N 은 선분 CM 의 중점이므로 \(\mathrm{N}(2,1)\) 이다. 따라서 선분 DN 을 지름으로 하는 원의 중심을 K 라 하면 \(\mathrm{K}\left(3, \frac{5}{2}\right)\) 이고 \(\overline{\mathrm{DN}}=\sqrt{13}\) 에서
+
+원의 반지름의 길이는 \(\frac{\sqrt{13}}{2}\) 이다.
+
+점 R 은 선분 BD 의 중점, 곧 점 E 이므로 \(\mathrm{R}(2,2)\) 이고
+
+점 F 는 선분 RD 의 중점이므로 \(\mathrm{F}(3,3)\) 이다.
+
+점 K 에서 선분 FQ 에 내린 수선의 발을 I 라 하자.
+
+\(\overline{\mathrm{KF}}=\frac{1}{2}\) 이고
+
+삼각형 KIF 는 직각이등변삼각형이므로
+
+\(\overline{\mathrm{KI}}=\overline{\mathrm{FI}}=\frac{\sqrt{2}}{4}\)
+
+직각삼각형 KIQ 에서
+
+\begin{center}
+\includegraphics[max width=\textwidth]{2024_08_03_9fb01ff65e78f43c421fg-9(2)}
+\end{center}
+
+이므로
+
+\(\overline{\mathrm{FQ}}=\overline{\mathrm{FI}}+\overline{\mathrm{IQ}}=\frac{3 \sqrt{2}}{2}\)
+
+점 Q 에서 직선 AR 에 내린 수선의 발을 J 라 하면 \(\overrightarrow{\mathrm{AQ}} \cdot \overrightarrow{\mathrm{AR}}=|\overrightarrow{\mathrm{AJ}}| \times|\overrightarrow{\mathrm{AR}}|\)
+
+\[
+\begin{aligned}
+& =(|\overrightarrow{\mathrm{AR}}|+|\overrightarrow{\mathrm{FQ}}|) \times|\overrightarrow{\mathrm{AR}}| \\
+& =\left(2 \sqrt{2}+\frac{3 \sqrt{2}}{2}\right) \times 2 \sqrt{2} \\
+& =14
+\end{aligned}
+\]
+
+\begin{enumerate}
+  \setcounter{enumi}{28}
+  \item 쌍곡선의 방정식을 \(\frac{x^{2}}{a^{2}}-\frac{y^{2}}{b^{2}}=1 \quad\left(a>0, b>0, a^{2}+b^{2}=c^{2}\right)\) 이라 하자.
+\end{enumerate}
+
+쌍곡선의 점근선 중에서 기울기가 양수인 직선의 방정식은 \(y=\frac{b}{a} x\) 이므로 직선 \(\mathrm{PF}^{\prime}\) 의 기울기도 \(\frac{b}{a}\) 이다.
+
+직선 PR 은 \(x\) 축과 평행하고
+
+쌍곡선은 \(y\) 축에 대하여 대칭이므로
+
+두 선분 \(\mathrm{PF}^{\prime}, \mathrm{RF}\) 도 \(y\) 축에 대하여 서로 대칭이다. 곧, \(\overline{\mathrm{PF}^{\prime}}=\overline{\mathrm{RF}}\)
+
+또한 사각형 \(\mathrm{PF}^{\prime} \mathrm{FQ}\) 가 평행사변형이므로
+
+\(\overline{\mathrm{PF}^{\prime}}=\overline{\mathrm{QF}}\) 가 되어 \(\overline{\mathrm{PF}^{\prime}}=\overline{\mathrm{RQ}}=\overline{\mathrm{RF}}=\overline{\mathrm{QF}}\) 이다 그러므로 삼각형 FQR 은 정삼각형이다. 따라서 직선 QF 의 기울기는 \(\sqrt{3}\) 이므로
+
+직선 \(\mathrm{PF}^{\prime}\) 의 기울기도 \(\sqrt{3}\) 이며 \(\angle \mathrm{PF}^{\prime} \mathrm{F}=\frac{\pi}{3}\) 이다.
+
+곧, \(\frac{b}{a}=\sqrt{3}\) 에서 \(b=\sqrt{3} a\) 이고,
+
+\(c=\sqrt{a^{2}+b^{2}}=2 a\) 이므로 \(\overline{\mathrm{FF}^{\prime}}=2 c=4 a\)
+
+한편, \(\overline{\mathrm{PF}}=2\) 이므로 쌍곡선의 정의에 의하여
+
+\(\overline{\mathrm{PF}^{\prime}}=\overline{\mathrm{PF}}-2 a=2-2 a\)
+
+삼각형 \(\mathrm{PF}^{\prime} \mathrm{F}\) 에서 코사인법칙에 의하여
+
+\(\overline{\mathrm{PF}}^{2}=\overline{\mathrm{PF}}^{2}+\overline{\mathrm{FF}}^{2}-2 \times \overline{\mathrm{PF}^{\prime}} \times \overline{\mathrm{FF}^{\prime}} \times \cos \left(\angle \mathrm{PF}^{\prime} \mathrm{F}\right)\)
+
+\(2^{2}=(2-2 a)^{2}+(4 a)^{2}-2 \times(2-2 a) \times 4 a \times \cos \frac{\pi}{3}\) \(7 a^{2}-4 a=0, \quad 7 a\left(a-\frac{4}{7}\right)=0\)
+
+에서 \(a=\frac{4}{7}(\because a>0)\)
+
+따라서 쌍곡선의 주축의 길이는 \(2 a=\frac{8}{7}\)
+
+곧, \(k=\frac{8}{7}\) 이므로 \(28 k=32\)
+
+\begin{enumerate}
+  \setcounter{enumi}{29}
+  \item 구 \(S\) 의 반지름의 길이를 \(r\) 이라 하면
+\end{enumerate}
+
+\[
+\begin{aligned}
+r=\overline{\mathrm{AC}} & =\sqrt{(5-0)^{2}+(2 \sqrt{2}-0)^{2}+(\sqrt{3}-2 \sqrt{3})^{2}} \\
+& =6
+\end{aligned}
+\]
+
+점 B 의 좌표를 \(\mathrm{B}(b, 0,0)\) 이라 하면 직각삼각형 ABC 에서
+
+\(\overline{\mathrm{AB}}^{2}=\overline{\mathrm{AC}}^{2}+\overline{\mathrm{BC}}^{2}\)
+
+\(b^{2}+0^{2}+(-2 \sqrt{3})^{2}\)
+
+\(=6^{2}+\left\{(5-b)^{2}+(2 \sqrt{2})^{2}+(\sqrt{3})^{2}\right\}\)
+
+\(b=6\)
+
+\(\overline{\mathrm{AB}}=\sqrt{6^{2}+0^{2}+(-2 \sqrt{3})^{2}}=4 \sqrt{3}\)
+
+\(\overline{\mathrm{BC}}=\sqrt{(-1)^{2}+(2 \sqrt{2})^{2}+(\sqrt{3})^{2}}=2 \sqrt{3}\)
+
+에서 \(\cos (\angle \mathrm{ABC})=\frac{\overline{\mathrm{BC}}}{\overline{\mathrm{AB}}}=\frac{2 \sqrt{3}}{4 \sqrt{3}}=\frac{1}{2}\) 이므로
+
+\(\angle \mathrm{ABC}=\frac{\pi}{3}\)
+
+점 C 에서 직선 AB 에 내린 수선의 발을 H 라 하고,
+
+직선 CH 가 구 \(S\) 와 만나는 점 중 점 H 로부터의 거리 가 먼 점을 I 라 하자.
+
+\(\overline{\mathrm{IC}}=r=6\)
+
+\(\overline{\mathrm{CH}}=\overline{\mathrm{BC}} \times \sin (\angle \mathrm{ABC})=2 \sqrt{3} \times \frac{\sqrt{3}}{2}=3\)
+
+구 \(S\) 위의 점 P 에서 직선 AB 에 내린 수선의 발을 \(\mathrm{P}_{1}\) 이라 하면
+
+(삼각형 ABP 의 넓이) \(=\frac{1}{2} \times \overline{\mathrm{AB}} \times \overline{\mathrm{PP}_{1}}\)
+
+이므로 삼각형 ABP 의 넓이가 최대가 되려면 선분 \(\mathrm{PP}_{1}\) 의 길이가 최대가 되어야 한다.
+
+\begin{center}
+\includegraphics[max width=\textwidth]{2024_08_03_9fb01ff65e78f43c421fg-9}
+\end{center}
+
+점 P 에서 직선 AB 에 내린 수선의 발이 \(\mathrm{P}_{1}\) 이고 점 H 는 직선 AB 위의 점이므로 \(\overline{\mathrm{PP}_{1}} \leq \overline{\mathrm{PH}}\),
+
+또한 \(\overline{\mathrm{PH}} \leq \overline{\mathrm{PC}}+\overline{\mathrm{CH}}\) 이고
+
+\(\overline{\mathrm{PC}}=\overline{\mathrm{IC}}\) 에서 \(\overline{\mathrm{PH}} \leq \overline{\mathrm{IC}}+\overline{\mathrm{CH}}=\overline{\mathrm{IH}}\)
+
+따라서 \(\overline{\mathrm{PP}_{1}} \leq \overline{\mathrm{IH}}\) 이다.
+
+점 I 에서 직선 AB 에 내린 수선의 발이 H 이고,
+
+구 \(S\) 위의 점 P 에서 직선 AB 에 내린 수선의 발 \(\mathrm{P}_{1}\) 에 대하여 선분 \(\mathrm{PP}_{1}\) 의 길이가 최대가 되도록 하는 점 P 가 X 이므로 \(\mathrm{X}=\mathrm{I}\) 이다.
+
+점 X 의 좌표를 \(\mathrm{X}\left(x_{0}, y_{0}, z_{0}\right)\) 이라 하자.
+
+\(\overline{\mathrm{CH}}=3, \overline{\mathrm{CX}}=\overline{\mathrm{CI}}=6\) 이므로
+
+점 X 는 선분 HC 를 \(3: 2\) 로 외분하는 점이다. 두 점 \(\mathrm{H}, \mathrm{C}\) 의 \(y\) 촤표가 각각 \(0,2 \sqrt{2}\) 이므로 점 X 의 \(y\) 좌표 \(y_{0}\) 은
+
+\(y_{0}=\frac{3 \times 2 \sqrt{2}-2 \times 0}{3-2}=6 \sqrt{2}\)\\
+점 X 에서 \(x y\) 평면에 내린 수선의 발을 \(\mathrm{X}_{1}\) 이라 하면 점 \(\mathrm{X}_{1}\) 의 좌표는 \(\left(x_{0}, y_{0}, 0\right)\) 이다.
+
+또한 점 A 에서 \(x y\) 평면에 내린 수선의 발은 원점 O 이 므로
+
+(삼각형 ABX 의 \(x y\) 평면 위로의 정사영의 넓이) \(=\) (삼각형 \(\mathrm{OBX}_{1}\) 의 넓이)
+
+\(=\frac{1}{2} \times \overline{\mathrm{OB}} \times\) (점 \(\mathrm{X}_{1}\) 의 \(y\) 좌표)
+
+\(=\frac{1}{2} \times 6 \times y_{0}\)
+
+\(=18 \sqrt{2}\)
+
+따라서 \(k=18\)
+
+
+\end{document}
