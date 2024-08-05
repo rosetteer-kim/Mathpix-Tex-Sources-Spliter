@@ -9,13 +9,13 @@ def sub_letter_of_choice(text: str, pattern: str) -> tuple[str, list[LiteralStri
     matches = re.findall(pattern, text, re.DOTALL)
     if matches:
         for match in matches[0]:
-            if re.findall(r"[ㄱㄴㄷ가~힣]", match, re.DOTALL):
+            if re.findall(r"[ㄱ-ㅎ가-힣]", match, re.DOTALL):
                 choice.append(match)
             else:
                 choice.append('$'+match+'$')
 
     text_modified = re.sub(pattern, '\n'+'-'*10+' 선지 위치 '+'-'*10+'\n', text)
-    
+
     return text_modified, choice
 
 

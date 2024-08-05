@@ -2,6 +2,8 @@
 # (marker)의 종류 2024년 08월 03일 버전
 #   1. r'\\\\\n\d{1,2}\s*[\.:\)]|\n\n\d{1,2}\s*[\.:\)]|\\section\*\{\d{1,2}\.|\\section\*\{\d{1,2}\)'
 #   2. enumerate 환경 내부의 \item
+#   3. (시대인재 해설)
+#      r'\\section\*\{\d{1,2}\}|\n\n\d{1,2}\n|\\\\\n\d{1,2}\n'
 # (marker)들의 시작 위치와 끝 위치를 찾아서 (content)들을 추출
 #
 #
@@ -55,14 +57,26 @@ def find_marker_type2(tex_src: str):
     return marker_positions
 
 
+# 시대인재 해설
+def find_marker_type3(tex_src: str):
+    marker_pattern_type3 = \
+        r'\\section\*\{\d{1,2}\}|\n\n\d{1,2}\n|\\\\\n\d{1,2}\n'
+    gen_marker_position = enum_marker_locations(tex_src, marker_pattern_type3)
+    marker_positions = gen_marker_position(lambda x: x, lambda x: x)
+    return marker_positions
+
+
 def split_mathpix_tex_source(tex_src: str):
     pattern = r'\\begin\{verbatim\}|\\end\{verbatim\}'
     tex_src_screened = re.sub(pattern, '', tex_src)
+    tex_src_screened = re.sub('ᄀ', 'ㄱ', tex_src_screened)
+    tex_src_screened = re.sub('ᄂ', 'ㄴ', tex_src_screened)
+    tex_src_screened = re.sub('ᄃ', 'ㄷ', tex_src_screened)
     return split_tex_source(tex_src_screened)
 
 
 def split_tex_source(tex_src: str):
-    marker_positions = find_marker_type1(tex_src) + find_marker_type2(tex_src)
+    marker_positions = find_marker_type1(tex_src) + find_marker_type2(tex_src) + find_marker_type3(tex_src)
     marker_positions.sort()
 
     # 파악한 위치로 분리 저장
