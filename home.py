@@ -7,10 +7,8 @@ def main():
     st.title("Mathpix TeX Source Spliter")
 
     questions_file = st.file_uploader("TeX File: 반드시 문제", type="tex")
-    solutions_file = st.file_uploader("TeX File: 해설", type="tex")
-    if questions_file is not None and solutions_file is not None:
+    if questions_file is not None:
         questions = questions_file.getvalue().decode("utf-8")
-        solutions = solutions_file.getvalue().decode("utf-8")
         if st.button("문제 분리"):
             # tex file 분리
             questions_split = smts.split_mathpix_tex_source(questions)
@@ -27,6 +25,9 @@ def main():
                     st.text(content[1])
 
             st.markdown("---")  # 구분선 추가
+    solutions_file = st.file_uploader("TeX File: 해설", type="tex")
+    if solutions_file is not None:
+        solutions = solutions_file.getvalue().decode("utf-8")
         if st.button("해설 분리"):
             # tex file 분리
             solutions_split = smts.split_mathpix_tex_source(solutions)
@@ -40,7 +41,9 @@ def main():
                 with st.expander(f"해설 {i+1}"):
                     st.text(content)
             st.markdown("---")  # 구분선 추가
+        qus_and_sol_file = st.file_uploader("TeX File: 문제와 해설 (개발 전)", type="tex")
         if st.button("문항과 해설 동시 분리"):
+            qus_and_sol = qus_and_sol_file.getvalue().decode("utf-8")
             pass
 
 main()
