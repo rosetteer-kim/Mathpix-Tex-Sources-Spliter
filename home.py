@@ -17,8 +17,14 @@ def main():
             st.write(f"문제 수: {len(questions_split)}")
 
             st.markdown("---")  # 구분선 추가
-
+            exercises = ""
+            # for i, content in enumerate(mod_loc_q_split):
+            #     exercises += 'S' + 'ㅡ' * 10 + ' ' + f'{i + 1}번' + ' ' + 'ㅡ' * 10 + '\n'
+            #     exercises += content[0]
+            #     exercises += 'E' + 'ㅡ' * 10 + ' ' + f'{i + 1}번' + ' ' + 'ㅡ' * 10 + '\n\n\n'
+            # txt = st.text_area(f'\n',exercises, height=1000)
             for i, content in enumerate(mod_loc_q_split):
+                # txt = st.text_area(f'{'-'*10} {i + 1}번 {'-'*10}', content[0], height=500)
                 with st.expander(f"문제 {i + 1}"):
                     st.text(content[0])
                 with st.expander(f"형태: {content[2]}"):

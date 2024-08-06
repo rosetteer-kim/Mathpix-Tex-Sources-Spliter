@@ -130,7 +130,7 @@ def remove_lines_with_words(text: str):
     words_to_remove = \
         ['begin{enumerate}', 'end{enumerate}', 'setcounter{enumi}', 'begin{itemize}',
          'end{itemize}', 'end{document}', '단답형', '선다형', '확인 사항', '답안지의 해당란에',
-         '선택한 과목인지 확인하시오', '제2교시 수학 영역', '문제지']
+         '선택한 과목인지 확인하시오', '제2교시 수학 영역', '문제지', '수 학 영 역 ']
     # 문자열을 줄 단위로 분리
     lines = text.split('\n')
     # 지정된 단어들 중 어느 하나도 포함하지 않는 라인만 선택
