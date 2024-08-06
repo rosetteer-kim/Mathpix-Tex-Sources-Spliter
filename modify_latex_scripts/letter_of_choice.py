@@ -16,7 +16,6 @@ def sub_letter_of_choice(text: str, pattern: str) -> tuple[str, list[LiteralStri
     text_modified = re.sub(pattern, '\n'+'-'*10+' 선지 위치 '+'-'*10+'\n', text)
 
     return text_modified, choice
-    return text, choice
 
 
 def letter_of_choice(text: str) -> tuple[str, list[LiteralString | Any], str]:
