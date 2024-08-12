@@ -117,7 +117,7 @@ def remove_extra_closing_brace(text: str):
 # \section*{section_title}부터 끝까지 삭제
 def remove_section_to_end(text: str):
     # titles_to_remove = ['수학 영역', '공통과목', '미적분', '* 확인 사항']
-    titles_to_remove = ['공통과목', '미적분', '* 확인 사항']
+    titles_to_remove = ['공통과목', '미적분', '* 확인 사항', '확률과 통계']
     # \section*{section_title}부터 끝까지 선택
     section_title = '|'.join(map(re.escape, titles_to_remove))
     pattern = rf'\\section\*{{({section_title})}}.*'
