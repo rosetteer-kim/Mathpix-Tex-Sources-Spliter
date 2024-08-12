@@ -67,7 +67,7 @@ def find_marker_type3(tex_src: str):
 
 
 def split_mathpix_tex_source(tex_src: str):
-    pattern = r'\\begin\{verbatim\}|\\end\{verbatim\}'
+    pattern = r'\\begin\{verbatim\}|\\end\{verbatim\}|\\section\*\{수학 영역\}'
     tex_src_screened = re.sub(pattern, '', tex_src)
     tex_src_screened = re.sub('ᄀ', 'ㄱ', tex_src_screened)
     tex_src_screened = re.sub('ᄂ', 'ㄴ', tex_src_screened)
@@ -116,7 +116,8 @@ def remove_extra_closing_brace(text: str):
 
 # \section*{section_title}부터 끝까지 삭제
 def remove_section_to_end(text: str):
-    titles_to_remove = ['수학 영역', '공통과목', '미적분', '* 확인 사항']
+    # titles_to_remove = ['수학 영역', '공통과목', '미적분', '* 확인 사항']
+    titles_to_remove = ['공통과목', '미적분', '* 확인 사항']
     # \section*{section_title}부터 끝까지 선택
     section_title = '|'.join(map(re.escape, titles_to_remove))
     pattern = rf'\\section\*{{({section_title})}}.*'
